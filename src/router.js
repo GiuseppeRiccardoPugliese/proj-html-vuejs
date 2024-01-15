@@ -34,5 +34,6 @@ window.addEventListener('load', () => {
     if (currentPath !== '/') {
       router.push('/');
     }
-  });
+});
+
 export {router};
