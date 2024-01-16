@@ -250,9 +250,9 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-*::selection
-{ 
-color: #ef9303; background: #00000013;  
+*::selection {
+  color: #ef9303;
+  background: #00000013;
 }
 
 .jumbo {
@@ -343,12 +343,12 @@ h3 {
 .backColor {
   background-color: #fbf4e6;
 
-  .benefits{
+  .benefits {
     width: 25%;
     padding: 20px;
     margin: 50px 0;
 
-    img{
+    img {
       width: 70px;
       height: 70px;
       margin-right: 15px;
@@ -361,7 +361,7 @@ h3 {
     width: 50%;
   }
 
-  .backColor .benefits{
+  .backColor .benefits {
     width: 50%;
   }
 }
@@ -371,7 +371,7 @@ h3 {
     width: 100%;
   }
 
-  .backColor .benefits{
+  .backColor .benefits {
     width: 100%;
   }
 }
