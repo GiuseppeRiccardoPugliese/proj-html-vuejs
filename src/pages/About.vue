@@ -60,7 +60,7 @@ export default {
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">You here!</li>
-        <li class="breadcrumb-item" aria-current="page">> Home</li>
+        <li class="breadcrumb-item">> <a href="/">Home</a></li>
         <li class="breadcrumb-item">> About</li>
       </ol>
     </nav>
@@ -164,6 +164,16 @@ export default {
   background-image: url(../assets/breckum-img.jpg);
   background-size: cover;
   color: $primary;
+
+  a{
+    text-decoration: none;
+    color: $primary;
+    transition: color 0.3s linear 0s;
+  }
+
+  a:hover{
+    color: #ef9303;
+  }
 }
 
 .part_up {
