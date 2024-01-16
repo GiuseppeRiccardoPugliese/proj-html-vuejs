@@ -46,6 +46,14 @@ export default {
           <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">Eating naturally & organic is always be healthy.</h1>
+            <div class="d-flex justify-content-center">
+              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+                <span><a href="#">ABOUT US</a></span>
+              </div>
+              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+                <span><a href="#">OUR HISTORY</a></span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
@@ -53,6 +61,14 @@ export default {
           <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">Eating naturally & organic is always be healthy.</h1>
+            <div class="d-flex justify-content-center">
+              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+                <span><a href="#">ABOUT US</a></span>
+              </div>
+              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+                <span><a href="#">OUR HISTORY</a></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -115,6 +131,50 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+.my_orange-button {
+  width: 140px;
+  background-color: #ef9303;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: background-color 0.5s linear 0s;
+
+  span {
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}
+
+.my_orange-button:hover {
+  background-color: $green;
+  cursor: pointer;
+}
+
+.my_green-button {
+  width: 140px;
+  background-color: $green;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: background-color 0.5s linear 0s;
+
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.my_green-button:hover {
+  background-color: $orange;
+  cursor: pointer;
+}
 
 .ms_big-title {
   font-size: 70px;
