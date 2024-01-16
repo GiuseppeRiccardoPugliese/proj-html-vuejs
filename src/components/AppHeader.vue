@@ -32,7 +32,7 @@ export default {
         </div>
       </div>
     </div>
-    <nav>
+    <nav class="d-flex justify-content-between align-items-center container">
       <div class="d-flex align-items-center">
         <img src="../assets/logo.png" alt="">
         <div class="dropdown">
@@ -51,47 +51,78 @@ export default {
         <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            HOME
+            ABOUT
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Opzione 1</a>
-            <a class="dropdown-item" href="#">Opzione 2</a>
-            <a class="dropdown-item" href="#">Opzione 3</a>
+            <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'about' }">About</router-link></a>
+            <a class="dropdown-item" href="#">Team</a>
+            <a class="dropdown-item" href="#"> Pricing Table</a>
+            <a class="dropdown-item" href="#">Faq Page</a>
+            <a class="dropdown-item" href="#">Testimonial</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            SERVICE
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            PORTFOLIO
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Portfolio-1colum</a>
+            <a class="dropdown-item" href="#">Portfolio-2colum</a>
+            <a class="dropdown-item" href="#">Portfolio-3colum</a>
+            <a class="dropdown-item" href="#">Portfolio-4colum</a>
           </div>
         </div>
         <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            HOME
+            SHOP
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Opzione 1</a>
-            <a class="dropdown-item" href="#">Opzione 2</a>
-            <a class="dropdown-item" href="#">Opzione 3</a>
+            <a class="dropdown-item" href="#">Shop</a>
+            <a class="dropdown-item" href="#">My account</a>
+            <a class="dropdown-item" href="#">Cart</a>
+            <a class="dropdown-item" href="#">Checkout</a>
           </div>
         </div>
         <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            HOME
+            BLOG
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Opzione 1</a>
-            <a class="dropdown-item" href="#">Opzione 2</a>
-            <a class="dropdown-item" href="#">Opzione 3</a>
+            <a class="dropdown-item" href="#">Blog Let Sidebar</a>
+            <a class="dropdown-item" href="#">Blog Right Sidebat</a>
+            <a class="dropdown-item" href="#">Blog Right 2Column</a>
+            <a class="dropdown-item" href="#">Blog Left 2Column</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            HOME
+          <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <router-link class="router" :to="{ name: 'contact' }">CONTACT</router-link>
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Opzione 1</a>
-            <a class="dropdown-item" href="#">Opzione 2</a>
-            <a class="dropdown-item" href="#">Opzione 3</a>
-          </div>
+
         </div>
+
+      </div>
+      <div id="shop" class="d-flex align-items-center justify-content-between me-3">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div id="number">0</div>
+
+        </div>
+
+        <div class="my_button d-flex align-items-center justify-content-center" data-v-46a23cd7=""><span
+            data-v-46a23cd7=""><a href="#" data-v-46a23cd7="">ABOUT US</a></span></div>
+
 
       </div>
 
@@ -102,23 +133,24 @@ export default {
   </header>
 
   <nav>
-        <ul>
-            <li>
-                <router-link :to="{name: 'home'}">Home</router-link>
-            </li>
-            <li>
-                <router-link :to="{name: 'about'}">About</router-link>
-            </li>
-            <li>
-                <router-link :to="{name: 'contact'}">Contact</router-link>
-            </li>
-        </ul>
-    </nav>
+    <ul>
+      <li>
+        <router-link :to="{ name: 'home' }">Home</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'about' }">About</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'contact' }">Contact</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 
+// sezione info
 #info {
   height: 50px;
   background-color: #007066;
@@ -134,6 +166,11 @@ export default {
   text-decoration: none;
 }
 
+// sezine nav
+nav {
+  height: 100px;
+}
+
 .dropdown {
   color: #ef9e05;
 }
@@ -142,5 +179,64 @@ export default {
   display: block;
   border: none;
 
+}
+
+nav a:hover {
+  color: #ef9e05;
+}
+
+a {
+  text-decoration: none;
+}
+
+// sezione shop
+
+#shop {
+  width: 15%;
+}
+
+.my_button:hover {
+  background-color: #007066;
+  cursor: pointer;
+}
+
+.my_button {
+  width: 100px;
+  font-size: 12px;
+  background-color: #ef9303;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  transition: background-color 0.5s linear 0s;
+  padding: 6px;
+}
+
+.my_button a {
+  color: white;
+}
+
+.fa-cart-shopping {
+  color: #007066;
+}
+
+.fa-magnifying-glass {
+  color: white;
+  background-color: #ef9303;
+  padding: 6px;
+  border-radius: 25px;
+}
+
+#cart {
+  position: relative;
+}
+
+#number {
+  position: absolute;
+  top: -10px;
+  right: -17px;
+  color: white;
+  padding: 2px 7px;
+  background-color: #ef9303;
+  border-radius: 15px;
+  font-size: 10px;
 }
 </style>
