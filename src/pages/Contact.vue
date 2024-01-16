@@ -1,14 +1,18 @@
 <script>
+//Importo l'I-Frame
+import MapiFrame from '../components/MapiFrame.vue'
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  components: {
+    MapiFrame,
+  }
 }
 </script>
 
 <template>
-  <main>
-    <div
-      class="jumbo d-flex justify-content-center align-items-center flex-column"
-    >
+  <!-- Topside with Breadcrumb -->
+  <section>
+    <div class="jumbo d-flex justify-content-center align-items-center flex-column">
       <div>
         <h2>About</h2>
       </div>
@@ -20,7 +24,12 @@ export default {
         </ol>
       </nav>
     </div>
-  </main>
+  </section>
+
+  <!-- I-FRAME -->
+  <section>
+    <MapiFrame />
+  </section>
 </template>
 
 <style lang="scss" scoped>
