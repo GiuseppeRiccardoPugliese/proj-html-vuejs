@@ -136,6 +136,11 @@ export default {
             would much rather someone bought food that was local and sustainable
             but not organic than bought organic food
           </p>
+          <div
+            class="my_button d-flex align-items-center justify-content-center p-3 mt-4"
+          >
+            <span><a href="#">ABOUT US</a></span>
+          </div>
         </div>
         <div class="col-12 col-md-8 d-flex flex-wrap">
           <div
@@ -143,7 +148,7 @@ export default {
             v-for="item in fruits"
           >
             <img :src="item.imgPath" alt="" />
-            <span>{{ item.name }}</span>
+            <span class="h_fruit">{{ item.name }}</span>
           </div>
         </div>
       </div>
@@ -169,28 +174,27 @@ export default {
   .w-parag {
     width: 50%;
   }
+}
+.my_button {
+  width: 140px;
+  background-color: #ef9303;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: background-color 0.5s linear 0s;
 
-  .my_button {
-    width: 140px;
-    background-color: #ef9303;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: background-color 0.5s linear 0s;
+  span {
+    font-size: 14px;
 
-    span {
-      font-size: 14px;
-
-      a {
-        text-decoration: none;
-        color: $primary;
-      }
+    a {
+      text-decoration: none;
+      color: $primary;
     }
   }
+}
 
-  .my_button:hover {
-    background-color: $green;
-    cursor: pointer;
-  }
+.my_button:hover {
+  background-color: $green;
+  cursor: pointer;
 }
 
 .s_orange {
@@ -218,15 +222,21 @@ h3 {
 .card_fruits_org {
   width: 25%;
 
-  span {
+  .h_fruit {
     font-weight: 500;
     margin-top: 10px;
+    transition: color 0.3s linear 0s;
+  }
+
+  .h_fruit:hover {
+    color: #ef9303;
+    cursor: pointer;
   }
 }
 
 @media screen and (max-width: 768px) {
-    .card_fruits_org{
-        width: 50%;
-    }
+  .card_fruits_org {
+    width: 50%;
+  }
 }
 </style>
