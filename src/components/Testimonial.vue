@@ -1,22 +1,41 @@
 <script>
+/* // Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
+// Import Swiper styles
+import 'swiper/css'
+
+import 'swiper/css/pagination'
+
+import './style.css'
+
+// import required modules
+import { Pagination } from 'swiper/modules' */
 export default {
-    name: 'Testimonial',
-    data() {
-        return {
-            testimonials: [
-                { longText: 'Testo lungo 1', shortText: 'Breve 1' },
-                { longText: 'Testo lungo 2', shortText: 'Breve 2' },
-                // Aggiunte di altre diapositive se servono
-            ],
-        };
-    },
+  name: 'Testimonial',
+  /* components: {
+    Swiper,
+    SwiperSlide
+  }, */
+  data() {
+    return {
+      testimonials: [
+        { longText: 'Testo lungo 1', shortText: 'Breve 1' },
+        { longText: 'Testo lungo 2', shortText: 'Breve 2' }
+        // Aggiunte di altre diapositive se servono
+      ]
+    }
+  },
+  /* setup() {
+    return {
+      modules: [Pagination]
+    }
+  } */
 }
-
 </script>
 
 <template>
-    <!-- <div>
+  <!-- <div>
         <div class="carousel-container">
             <div class="carousel-inner" :style="{ transform: 'translateX(' + translateValue + 'px)' }">
                 <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-slide">
@@ -34,6 +53,21 @@ export default {
             <span aria-hidden="true">&raquo;</span>
         </button>
     </div>  -->
+  <!-- <swiper
+    :slidesPerView="3"
+    :spaceBetween="30"
+    :pagination="{
+      clickable: true
+    }"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+  </swiper> -->
 </template>
 
 <style lang="scss" scoped>
