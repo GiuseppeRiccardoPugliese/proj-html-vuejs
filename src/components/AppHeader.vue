@@ -33,7 +33,7 @@ export default {
       </div>
     </div>
     <nav class="d-flex justify-content-between align-items-center container">
-      <div class="d-flex align-items-center">
+      <div id="dropdpwns" class="d-flex align-items-center">
         <img src="../assets/logo.png" alt="">
         <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -120,8 +120,8 @@ export default {
 
         </div>
 
-        <div class="my_button d-flex align-items-center justify-content-center" data-v-46a23cd7=""><span
-            data-v-46a23cd7=""><a href="#" data-v-46a23cd7="">ABOUT US</a></span></div>
+        <div class="my_order d-flex align-items-center justify-content-center"><span data-v-46a23cd7=""><a href="#"
+              data-v-46a23cd7="">ORDER NOW</a></span></div>
 
 
       </div>
@@ -171,6 +171,11 @@ nav {
   height: 100px;
 }
 
+nav .btn {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
 .dropdown {
   color: #ef9e05;
 }
@@ -192,15 +197,15 @@ a {
 // sezione shop
 
 #shop {
-  width: 15%;
+  width: 20%;
 }
 
-.my_button:hover {
+.my_order:hover {
   background-color: #007066;
   cursor: pointer;
 }
 
-.my_button {
+.my_order {
   width: 100px;
   font-size: 12px;
   background-color: #ef9303;
@@ -210,12 +215,13 @@ a {
   padding: 6px;
 }
 
-.my_button a {
+.my_order a {
   color: white;
 }
 
 .fa-cart-shopping {
   color: #007066;
+  margin: 0 5px;
 }
 
 .fa-magnifying-glass {
