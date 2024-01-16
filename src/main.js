@@ -3,10 +3,10 @@ import App from './App.vue';
 //Importo le rotte
 import { router } from './router';
 
-// // import Swiper JS
-// import Swiper from 'swiper';
-// // import Swiper styles
-// import 'swiper/css';
+/* // import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
 
 // const swiper = new Swiper(...);
 
@@ -18,12 +18,12 @@ import { router } from './router';
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 
-// // init Swiper:
-// const swiper = new Swiper('.swiper', {
-//   // configure Swiper to use modules
-//   modules: [Navigation, Pagination],
-//   ...
-// });
+// init Swiper:
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+  ...
+}); */
 
 //bootstrap
 // import 'bootstrap/dist/css/bootstrap.min.css'
