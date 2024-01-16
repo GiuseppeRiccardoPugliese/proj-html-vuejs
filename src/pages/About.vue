@@ -66,7 +66,7 @@ export default {
     </nav>
   </div>
   <main>
-    <div class="my-5 d-flex align-items-center justify-content-center">
+    <section class="my-5 d-flex align-items-center justify-content-center">
       <div class="container row part_up">
         <div class="col-12 col-md-7">
           <span class="s_orange">Running week top selling</span>
@@ -120,11 +120,11 @@ export default {
           />
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="my-5 container shop"></div>
 
-    <div class="d-flex justify-content-center align-items-center flex-column">
+    <section class="d-flex justify-content-center align-items-center">
       <div class="container row my-5">
         <div class="col-12 col-md-4">
           <h1>
@@ -144,7 +144,7 @@ export default {
         </div>
         <div class="col-12 col-md-8 d-flex flex-wrap">
           <div
-            class="card_fruits_org d-flex align-items-center flex-column mb-3"
+            class="card_fruits_org d-flex align-items-center flex-column mt-3"
             v-for="item in fruits"
           >
             <img :src="item.imgPath" alt="" />
@@ -152,12 +152,108 @@ export default {
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center">
+      <div class="container row my-5">
+        <div class="col-12 col-xl-6">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H3-about.png"
+            alt=""
+          />
+        </div>
+
+        <div class="col-12 col-xl-6">
+          <span class="s_orange">Running week top selling</span>
+          <h1>
+            Health is wealth - eat <span class="s_orange">natural,</span> eat
+            <span class="s_orange">organic,</span> be healthy.
+          </h1>
+          <p class="p_grey">
+            Organic is loaded with a sense of rightness, with a set of rules. I
+            would much rather someone bought food that was local and sustainable
+            but not organic than bought organic food that had to be shipped
+            across the world.
+          </p>
+          <div class="d-flex">
+            <div class="w-parag me-2">
+              <h3>All are handmade</h3>
+              <p class="p_grey">
+                If I'm honest, the thing I am proudest of is my varieties of
+                wild flowers in the hay meadow.
+              </p>
+            </div>
+            <div class="w-parag">
+              <h3>100% Fresh ogranic</h3>
+              <p class="p_grey">
+                If I'm honest, the thing I am proudest of is my varieties of
+                wild flowers in the hay meadow.
+              </p>
+            </div>
+          </div>
+          <div
+            class="my_button d-flex align-items-center justify-content-center p-3 mt-4"
+          >
+            <span><a href="#">ABOUT US</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container backColor d-flex flex-wrap">
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+*::selection
+{ 
+color: #ef9303; background: #00000013;  
+}
 
 .jumbo {
   height: 220px;
@@ -165,13 +261,13 @@ export default {
   background-size: cover;
   color: $primary;
 
-  a{
+  a {
     text-decoration: none;
     color: $primary;
     transition: color 0.3s linear 0s;
   }
 
-  a:hover{
+  a:hover {
     color: #ef9303;
   }
 }
@@ -180,10 +276,10 @@ export default {
   img {
     width: 100%;
   }
+}
 
-  .w-parag {
-    width: 50%;
-  }
+.w-parag {
+  width: 50%;
 }
 .my_button {
   width: 140px;
@@ -244,9 +340,39 @@ h3 {
   }
 }
 
+.backColor {
+  background-color: #fbf4e6;
+
+  .benefits{
+    width: 25%;
+    padding: 20px;
+    margin: 50px 0;
+
+    img{
+      width: 70px;
+      height: 70px;
+      margin-right: 15px;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card_fruits_org {
     width: 50%;
+  }
+
+  .backColor .benefits{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card_fruits_org {
+    width: 100%;
+  }
+
+  .backColor .benefits{
+    width: 100%;
   }
 }
 </style>
