@@ -10,6 +10,11 @@ body {
     overflow-x: hidden;
 }
 
+*::selection {
+    color: #ef9303;
+    background: #00000013;
+}
+
 //General styles
 * {
     padding: 0;
