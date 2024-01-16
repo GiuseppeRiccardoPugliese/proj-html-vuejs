@@ -66,7 +66,6 @@ export default {
     </nav>
   </div>
   <main>
-    
     <section class="my-5 d-flex align-items-center justify-content-center">
       <div class="container row part_up">
         <div class="col-12 col-md-7">
@@ -157,14 +156,14 @@ export default {
 
     <section class="d-flex justify-content-center align-items-center">
       <div class="container row my-5">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-xl-6">
           <img
             src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H3-about.png"
             alt=""
           />
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-xl-6">
           <span class="s_orange">Running week top selling</span>
           <h1>
             Health is wealth - eat <span class="s_orange">natural,</span> eat
@@ -200,11 +199,61 @@ export default {
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="container backColor d-flex flex-wrap">
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+        <div class="benefits d-flex align-items-center">
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
+          <div>
+            <h5>Natural Farming</h5>
+            <span>we have a need to make these the of connections literal</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+*::selection
+{ 
+color: #ef9303; background: #00000013;  
+}
 
 .jumbo {
   height: 220px;
@@ -291,14 +340,38 @@ h3 {
   }
 }
 
+.backColor {
+  background-color: #fbf4e6;
+
+  .benefits{
+    width: 25%;
+    padding: 20px;
+    margin: 50px 0;
+
+    img{
+      width: 70px;
+      height: 70px;
+      margin-right: 15px;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card_fruits_org {
+    width: 50%;
+  }
+
+  .backColor .benefits{
     width: 50%;
   }
 }
 
 @media screen and (max-width: 576px) {
   .card_fruits_org {
+    width: 100%;
+  }
+
+  .backColor .benefits{
     width: 100%;
   }
 }
