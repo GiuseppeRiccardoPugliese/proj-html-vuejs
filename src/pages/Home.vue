@@ -1,11 +1,14 @@
 <script>
 //Importo Testimonial
 import Testimonial from '../components/Testimonial.vue'
+//Importo lo Shop
+import Shop from '../components/Shop.vue'
 
 export default {
   name: 'Home',
   components: {
     Testimonial,
+    Shop,
   },
   data() {
     return {
@@ -139,6 +142,11 @@ export default {
   <!-- Testimonials Slider -->
   <section class="bg-black">
     <Testimonial />
+  </section>
+
+  <!-- Shop -->
+  <section>
+    <Shop />
   </section>
 </template>
 
