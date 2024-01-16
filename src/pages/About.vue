@@ -111,14 +111,14 @@ img {
   }
 
   .my_button{
-    width: 130px;
+    width: 140px;
     background-color: #ef9303;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     transition: background-color 0.5s linear 0s;
 
     span{
-        font-size: 12px;
+        font-size: 14px;
 
         a{
             text-decoration: none;
