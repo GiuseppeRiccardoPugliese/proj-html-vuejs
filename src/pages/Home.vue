@@ -98,7 +98,7 @@ export default {
           clothes.
         </h1>
       </div>
-      <div class="col-6">
+      <div class="col-6 position-relative">
         <p class="m-0">I have a need to make these sorts of connections literal sometimes, and a vehicle often helps to do
           that. I
           have a relationship to hosting culture.<span class="ms_orange_text"> It isn't really about it helps to do that.
@@ -108,6 +108,9 @@ export default {
           Need to make these sorts of connections literal sometimes, and a vehicle often helps to do that. I have a
           relationship to hosting culture.
         </p>
+        <div class="col-12 position-absolute text-end" id="oscillating-image">
+          <img src="../assets/fe-shap1-1.png" alt="">
+        </div>
       </div>
       <!-- Carousel -->
       <div class="col-12 my-4">
@@ -141,6 +144,24 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+//Logo che oscilla
+#oscillating-image {
+  bottom: 20%;
+  left: 35%;
+  display: inline-block;
+  animation: oscillate 2s infinite alternate;
+
+  @keyframes oscillate {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-15px);
+    }
+  }
+}
 
 .my_orange-button {
   width: 140px;
