@@ -1,6 +1,7 @@
 <script>
 //Importo l'I-Frame
 import MapiFrame from '../components/MapiFrame.vue'
+
 export default {
   name: 'Contact',
   components: {
