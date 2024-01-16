@@ -1,7 +1,12 @@
 <script>
+//Importo Testimonial
+import Testimonial from '../components/Testimonial.vue'
 
 export default {
   name: 'Home',
+  components: {
+    Testimonial,
+  },
   data() {
     return {
       images: [
@@ -126,6 +131,11 @@ export default {
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section class="bg-black">
+    <Testimonial />
   </section>
 </template>
 
