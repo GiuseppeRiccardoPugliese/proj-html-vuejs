@@ -3,12 +3,15 @@
 import Testimonial from '../components/Testimonial.vue'
 //Importo lo Shop
 import Shop from '../components/Shop.vue'
+//Importo l'I-Frame
+import MapiFrame from '../components/MapiFrame.vue'
 
 export default {
   name: 'Home',
   components: {
     Testimonial,
     Shop,
+    MapiFrame,
   },
   data() {
     return {
@@ -147,6 +150,11 @@ export default {
   <!-- Shop -->
   <section>
     <Shop />
+  </section>
+
+  <!-- I-FRAME -->
+  <section>
+    <MapiFrame />
   </section>
 </template>
 
