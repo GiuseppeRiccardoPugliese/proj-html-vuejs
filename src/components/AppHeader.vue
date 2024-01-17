@@ -138,7 +138,7 @@ export default {
         <!-- offcanvas -->
 
       </div>
-      <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      <button class="btn  d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight"><i class="fa-solid fa-bars d-block d-lg-none"></i></button>
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">

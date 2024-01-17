@@ -5,8 +5,13 @@ import Farm from '../components/Farm.vue'
 import Shop from '../components/Shop.vue'
 //importo il testimonial
 import Testimonial from '../components/Testimonial.vue'
+<<<<<<< HEAD
 //importo le stats
 import Stats from '../components/Stats.vue'
+=======
+// importo Discount
+import Discount from '../components/Discount.vue'
+>>>>>>> dbe5170410091ed396d52a6394cd71a21e468dbf
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -24,7 +29,11 @@ export default {
     Farm,
     Shop,
     Testimonial,
+<<<<<<< HEAD
     Stats
+=======
+    Discount
+>>>>>>> dbe5170410091ed396d52a6394cd71a21e468dbf
   },
 
   setup() {
@@ -58,82 +67,48 @@ export default {
 <template>
   <!-- Slider after header -->
   <section>
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img
-            src="../assets/H3-slider3.jpg"
-            class="d-block w-100"
-            alt="first_img"
-          />
-          <div
-            class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
-          >
+          <img src="../assets/H3-slider3.jpg" class="d-block w-100" alt="first_img" />
+          <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
               Eating naturally & organic is always be healthy.
             </h1>
             <div class="d-flex justify-content-center">
-              <div
-                class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">ABOUT US</a></span>
               </div>
-              <div
-                class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">OUR HISTORY</a></span>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img
-            src="../assets/slider.jpg"
-            class="d-block w-100"
-            alt="second_img"
-          />
-          <div
-            class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
-          >
+          <img src="../assets/slider.jpg" class="d-block w-100" alt="second_img" />
+          <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
               Eating naturally & organic is always be healthy.
             </h1>
             <div class="d-flex justify-content-center">
-              <div
-                class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">ABOUT US</a></span>
               </div>
-              <div
-                class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">OUR HISTORY</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -156,8 +131,7 @@ export default {
           and a vehicle often helps to do that. I have a relationship to hosting
           culture.<span class="ms_orange_text">
             It isn't really about it helps to do that. I have a relationship to
-            hosting culture.</span
-          >
+            hosting culture.</span>
           <br />
           <br />
           Need to make these sorts of connections literal sometimes, and a
@@ -188,42 +162,25 @@ export default {
             <span class="visually-hidden">Next</span>
           </button>
         </div> -->
-        <swiper
-          :slidesPerView="4"
-          :spaceBetween="30"
-          :autoplay="{
-            delay: 2500,
-            disableOnInteraction: false
-          }"
-          :pagination="{
-            clickable: true
-          }"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+        <swiper :slidesPerView="4" :spaceBetween="30" :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false
+        }" :pagination="{
+  clickable: true
+}" :modules="modules" class="mySwiper">
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe2.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe3.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe2.jpg" alt="" />
           </swiper-slide>
         </swiper>
@@ -241,9 +198,15 @@ export default {
     <Testimonial />
   </section>
 
+<<<<<<< HEAD
   <!-- Statistiche -->
   <section class="container bgImgGreen">
     <Stats />
+=======
+  <!-- Discount -->
+  <section>
+    <Discount />
+>>>>>>> dbe5170410091ed396d52a6394cd71a21e468dbf
   </section>
 
   <!-- Farm Slider -->
