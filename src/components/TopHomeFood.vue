@@ -40,7 +40,7 @@ export default {
                     </div>
                 </h4>
                 <div><s>$18 </s>$17</div>
-
+                <div class="sale"><strong>SALE</strong></div>
             </div>
             <div class="card mb-4 pb-5">
                 <img src="../assets/s8.jpg" alt="">
@@ -66,6 +66,7 @@ export default {
                     </div>
                 </h4>
                 <div><s>$20 </s>$15</div>
+                <div class="sale"><strong>SALE</strong></div>
 
             </div>
         </div>
@@ -85,11 +86,11 @@ export default {
 
 .relative {
     position: relative;
+    cursor: pointer;
 }
 
-.icons {
-    display: none;
-    cursor: pointer;
+.relative:hover strong {
+    color: #ef9e05;
 }
 
 .fa-solid:hover {
@@ -98,20 +99,36 @@ export default {
 }
 
 .card {
-    transition: all 2s;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(148, 146, 245, .2);
+}
+
+.sale {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    background-color: #ef9e05;
+    padding: 7px 9px;
+    border-radius: 3px;
 }
 
 .card:hover .icons {
-    display: flex;
+    opacity: 1;
+    top: -34px;
 }
 
 
 .icons {
     position: absolute;
-    top: -34px;
+    top: -25px;
     left: calc(50% - 65px);
     width: 130px;
     font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.5s;
 
 }
 
