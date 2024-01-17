@@ -1,13 +1,15 @@
 <script>
 // Importo l'I-Frame
-import MapiFrame from '../components/MapiFrame.vue';
-import Stats from '../components/Stats.vue';
+import MapiFrame from '../components/MapiFrame.vue'
+import Stats from '../components/Stats.vue'
+import OrganicFoodDiscount from '../components/OrganicFoodDiscount.vue'
 
 export default {
   name: 'About',
   components: {
     MapiFrame,
-    Stats
+    Stats,
+    OrganicFoodDiscount
   },
   data() {
     return {
@@ -59,7 +61,9 @@ export default {
 </script>
 
 <template>
-  <div class="jumbo d-flex justify-content-center align-items-center flex-column">
+  <div
+    class="jumbo d-flex justify-content-center align-items-center flex-column"
+  >
     <div>
       <h2>About</h2>
     </div>
@@ -113,12 +117,17 @@ export default {
               sustainable but not organic
             </p>
           </div>
-          <div class="my_button d-flex align-items-center justify-content-center p-3">
+          <div
+            class="my_button d-flex align-items-center justify-content-center p-3"
+          >
             <span><a href="#">ABOUT US</a></span>
           </div>
         </div>
         <div class="col-12 col-md-5">
-          <img src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-about-img.png" alt="" />
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-about-img.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -137,12 +146,17 @@ export default {
             would much rather someone bought food that was local and sustainable
             but not organic than bought organic food
           </p>
-          <div class="my_button d-flex align-items-center justify-content-center p-3 mt-4">
+          <div
+            class="my_button d-flex align-items-center justify-content-center p-3 mt-4"
+          >
             <span><a href="#">ABOUT US</a></span>
           </div>
         </div>
         <div class="col-12 col-md-8 d-flex flex-wrap">
-          <div class="card_fruits_org d-flex align-items-center flex-column mt-3" v-for="item in fruits">
+          <div
+            class="card_fruits_org d-flex align-items-center flex-column mt-3"
+            v-for="item in fruits"
+          >
             <img :src="item.imgPath" alt="" />
             <span class="h_fruit">{{ item.name }}</span>
           </div>
@@ -153,7 +167,10 @@ export default {
     <section class="d-flex justify-content-center align-items-center">
       <div class="container row my-5">
         <div class="col-12 col-xl-6">
-          <img src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H3-about.png" alt="" />
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H3-about.png"
+            alt=""
+          />
         </div>
 
         <div class="col-12 col-xl-6">
@@ -184,7 +201,9 @@ export default {
               </p>
             </div>
           </div>
-          <div class="my_button d-flex align-items-center justify-content-center p-3 mt-4">
+          <div
+            class="my_button d-flex align-items-center justify-content-center p-3 mt-4"
+          >
             <span><a href="#">ABOUT US</a></span>
           </div>
         </div>
@@ -194,28 +213,40 @@ export default {
     <section>
       <div class="container backColor d-flex flex-wrap">
         <div class="benefits d-flex align-items-center">
-          <img src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png" alt="" />
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
           <div>
             <h5>Natural Farming</h5>
             <span>we have a need to make these the of connections literal</span>
           </div>
         </div>
         <div class="benefits d-flex align-items-center">
-          <img src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png" alt="" />
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
           <div>
             <h5>Natural Farming</h5>
             <span>we have a need to make these the of connections literal</span>
           </div>
         </div>
         <div class="benefits d-flex align-items-center">
-          <img src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png" alt="" />
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
           <div>
             <h5>Natural Farming</h5>
             <span>we have a need to make these the of connections literal</span>
           </div>
         </div>
         <div class="benefits d-flex align-items-center">
-          <img src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png" alt="" />
+          <img
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            alt=""
+          />
           <div>
             <h5>Natural Farming</h5>
             <span>we have a need to make these the of connections literal</span>
@@ -224,10 +255,15 @@ export default {
       </div>
     </section>
 
+    <!-- Statistiche -->
     <section>
-      <Stats/>
+      <Stats />
     </section>
 
+    <!-- Organic Food -->
+    <section>
+      <OrganicFoodDiscount />
+    </section>
     <!-- Map I-Frame -->
     <section>
       <MapiFrame />
