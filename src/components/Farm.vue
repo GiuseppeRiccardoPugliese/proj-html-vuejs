@@ -52,7 +52,7 @@ export default {
       clickable: true
     }"
     :modules="modules"
-    class="mySwiper"
+    class="mySwiper my-5"
   >
     <swiper-slide class="d-flex justify-content-center align-items-center">
       <img src="../assets/brand1.png" alt="" />
