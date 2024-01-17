@@ -1,6 +1,12 @@
 <script>
+// Importo l'I-Frame
+import MapiFrame from '../components/MapiFrame.vue'
+
 export default {
   name: 'About',
+  components: {
+    MapiFrame
+  },
   data() {
     return {
       fruits: [
@@ -244,6 +250,11 @@ export default {
           <h5>Award Winning</h5>
         </div>
       </div>
+    </section>
+
+    <!-- Map I-Frame -->
+    <section>
+      <MapiFrame />
     </section>
   </main>
 </template>
