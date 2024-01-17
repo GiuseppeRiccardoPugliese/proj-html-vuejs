@@ -3,13 +3,15 @@
 import MapiFrame from '../components/MapiFrame.vue'
 import Stats from '../components/Stats.vue'
 import OrganicFoodDiscount from '../components/OrganicFoodDiscount.vue'
+import Shop from '../components/Shop.vue'
 
 export default {
   name: 'About',
   components: {
     MapiFrame,
     Stats,
-    OrganicFoodDiscount
+    OrganicFoodDiscount,
+    Shop
   },
   data() {
     return {
@@ -132,7 +134,9 @@ export default {
       </div>
     </section>
 
-    <div class="my-5 container shop"></div>
+    <section>
+      <Shop />
+    </section>
 
     <section class="d-flex justify-content-center align-items-center">
       <div class="container row my-5">
@@ -261,7 +265,7 @@ export default {
     </section>
 
     <!-- Organic Food -->
-    <section>
+    <section class="container">
       <OrganicFoodDiscount />
     </section>
     <!-- Map I-Frame -->
