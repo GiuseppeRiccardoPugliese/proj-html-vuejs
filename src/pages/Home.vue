@@ -5,6 +5,8 @@ import Farm from '../components/Farm.vue'
 import Shop from '../components/Shop.vue'
 //importo il testimonial
 import Testimonial from '../components/Testimonial.vue'
+//importo le stats
+import Stats from '../components/Stats.vue'
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -21,7 +23,8 @@ export default {
     SwiperSlide,
     Farm,
     Shop,
-    Testimonial
+    Testimonial,
+    Stats
   },
 
   setup() {
@@ -238,6 +241,11 @@ export default {
     <Testimonial />
   </section>
 
+  <!-- Statistiche -->
+  <section class="container bgImgGreen">
+    <Stats />
+  </section>
+
   <!-- Farm Slider -->
   <section>
     <Farm />
@@ -319,6 +327,10 @@ export default {
 
 .ms_green_text {
   color: $green;
+}
+
+.bgImgGreen{
+  background-image: url(../assets/counter-bg.jpg);
 }
 
 // .carousel-control-prev-icon,
