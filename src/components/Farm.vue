@@ -1,11 +1,10 @@
 <script>
-
 //swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import 'swiper/css'
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 export default {
   name: 'Farm',
@@ -13,43 +12,24 @@ export default {
     Swiper,
     SwiperSlide
   },
-    
+
   setup() {
     return {
-        modules: [Autoplay, Pagination, Navigation],
-      };
+      modules: [Autoplay, Pagination, Navigation]
+    }
   }
 }
 </script>
 
 <template>
-  <!-- <div>
-        <div class="carousel-container">
-            <div class="carousel-inner" :style="{ transform: 'translateX(' + translateValue + 'px)' }">
-                <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-slide">
-                    <div class="slide-content">
-                        <h2>{{ testimonial.longText }}</h2>
-                        <p>{{ testimonial.shortText }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button @click="prevSlide" class="carousel-control-prev" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-        </button>
-        <button @click="nextSlide" class="carousel-control-next" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-        </button>
-    </div>  -->
+
   <swiper
     :slidesPerView="4"
     :spaceBetween="30"
+    :loop="true"
     :autoplay="{
       delay: 2500,
-      disableOnInteraction: false,
-    }"
-    :pagination="{
-      clickable: true
+      disableOnInteraction: false
     }"
     :modules="modules"
     class="mySwiper my-5"
