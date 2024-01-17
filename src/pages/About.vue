@@ -261,7 +261,7 @@ export default {
     </section>
 
     <!-- Organic Food -->
-    <section>
+    <section class="container">
       <OrganicFoodDiscount />
     </section>
     <!-- Map I-Frame -->
