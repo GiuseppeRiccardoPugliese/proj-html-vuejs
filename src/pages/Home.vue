@@ -257,6 +257,11 @@ export default {
     <Stats />
   </section>
 
+  <!-- Food Discount -->
+  <section>
+    <OrganicFoodDiscount />
+  </section>
+
   <!-- Farm Slider -->
   <section>
     <Farm />
