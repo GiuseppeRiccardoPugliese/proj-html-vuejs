@@ -9,6 +9,8 @@ import Testimonial from '../components/Testimonial.vue'
 import Stats from '../components/Stats.vue'
 // importo Discount
 import Discount from '../components/Discount.vue'
+//importo Food Discount
+import OrganicFoodDiscount from '../components/OrganicFoodDiscount.vue'
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -27,7 +29,8 @@ export default {
     Shop,
     Testimonial,
     Stats,
-    Discount
+    Discount,
+    OrganicFoodDiscount
   },
 
   setup() {

@@ -44,7 +44,7 @@ export default {
           satisfied clients.
         </p>
         <h4 class="fw-bold">Martha Alex</h4>
-        <h5>Manager</h5>
+        <h5 class="color_orange">Manager</h5>
       </div>
     </swiper-slide>
     <swiper-slide>
@@ -58,7 +58,7 @@ export default {
           satisfied clients.
         </p>
         <h4 class="fw-bold">Parvin Khan</h4>
-        <h5>Co-Of Officer</h5>
+        <h5 class="color_orange">Co-Of Officer</h5>
       </div>
     </swiper-slide>
   </swiper>
@@ -80,5 +80,9 @@ export default {
     background-image: url(../assets/testi-icon.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.color_orange{
+  color: #ef9303;
 }
 </style>
