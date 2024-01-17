@@ -62,7 +62,7 @@ export default {
 
 .size_p {
   font-size: 20px;
-  color: $blue;
+  color: $sus-black;
   font-weight: 600;
 }
 
