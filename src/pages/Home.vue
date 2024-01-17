@@ -5,6 +5,8 @@ import Farm from '../components/Farm.vue'
 import Shop from '../components/Shop.vue'
 //importo il testimonial
 import Testimonial from '../components/Testimonial.vue'
+// importo Discount
+import Discount from '../components/Discount.vue'
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -21,7 +23,8 @@ export default {
     SwiperSlide,
     Farm,
     Shop,
-    Testimonial
+    Testimonial,
+    Discount
   },
 
   setup() {
@@ -183,7 +186,12 @@ export default {
 
   <!-- Testimonial -->
   <section>
-    <Testimonial/>
+    <Testimonial />
+  </section>
+
+  <!-- Discount -->
+  <section>
+    <Discount />
   </section>
 
   <!-- Farm Slider -->
