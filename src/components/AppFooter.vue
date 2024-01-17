@@ -86,7 +86,7 @@ export default {
 
 
         </div>
-        <div id="info" class="d-flex align-items-center">
+        <div id="info" class="d-lg-flex align-items-lg-center">
             <div
                 class="container d-flex align-items-center flex-column justify-content-center flex-lg-row justify-content-lg-between">
                 <div>
