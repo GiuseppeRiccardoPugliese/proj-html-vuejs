@@ -31,7 +31,7 @@ export default {
             </div>
             <div class="card mb-4 pb-5">
                 <img src="../assets/s2.jpg" alt="">
-                <h4 class="relative"><strong>Fress Apple</strong>
+                <h4 class="relative"><strong>Fress Cobies</strong>
                     <div class="icons">
                         <i class=" me-3 fa-solid fa-heart"></i>
                         <i class=" me-3 fa-solid fa-cart-shopping"></i>
@@ -44,7 +44,7 @@ export default {
             </div>
             <div class="card mb-4 pb-5">
                 <img src="../assets/s8.jpg" alt="">
-                <h4 class="relative"><strong>Fress Apple</strong>
+                <h4 class="relative"><strong>Fress Waterlemon</strong>
                     <div class="icons">
                         <i class=" me-3 fa-solid fa-heart"></i>
                         <i class=" me-3 fa-solid fa-cart-shopping"></i>
@@ -57,7 +57,7 @@ export default {
             </div>
             <div class="card mb-4 pb-5">
                 <img src="../assets/s1.jpg" alt="">
-                <h4 class="relative"><strong>Fress Apple</strong>
+                <h4 class="relative"><strong>Fress Juice</strong>
                     <div class="icons">
                         <i class=" me-3 fa-solid fa-heart"></i>
                         <i class=" me-3 fa-solid fa-cart-shopping"></i>
