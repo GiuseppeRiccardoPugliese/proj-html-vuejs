@@ -228,31 +228,31 @@ export default {
         </div>
         <div class="benefits d-flex align-items-center">
           <img
-            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe2.png"
             alt=""
           />
           <div>
-            <h5>Natural Farming</h5>
+            <h5>Quality Product</h5>
             <span>we have a need to make these the of connections literal</span>
           </div>
         </div>
         <div class="benefits d-flex align-items-center">
           <img
-            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe3.png"
             alt=""
           />
           <div>
-            <h5>Natural Farming</h5>
+            <h5>Free Delivery</h5>
             <span>we have a need to make these the of connections literal</span>
           </div>
         </div>
         <div class="benefits d-flex align-items-center">
           <img
-            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe1.png"
+            src="https://themexbd.com/gogrin/organic/wp-content/uploads/2022/12/H2-fe4.png"
             alt=""
           />
           <div>
-            <h5>Natural Farming</h5>
+            <h5>Always Fresh</h5>
             <span>we have a need to make these the of connections literal</span>
           </div>
         </div>
