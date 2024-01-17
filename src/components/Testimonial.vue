@@ -35,9 +35,7 @@ export default {
     class="mySwiper my-5 container"
   >
     <swiper-slide>
-      <div
-        class="bg_img d-flex flex-column justify-content-center align-items-center"
-      >
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <i class="fa-solid fa-quote-left quote_icon"></i>
         <p class="text-center size_p">
           “Dessert pudding dessert jelly beans cupcake sweet caramels
@@ -74,7 +72,7 @@ export default {
 
 .size_p {
   font-size: 20px;
-  color: $blue;
+  color: $sus-black;
   font-weight: 600;
 }
 
