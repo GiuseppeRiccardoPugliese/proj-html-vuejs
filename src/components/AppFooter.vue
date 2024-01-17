@@ -9,6 +9,14 @@ export default {
 <template>
     <footer>
         <div class="container">
+            <div class="subscribe d-flex justify-content-between align-items-center">
+                <h3><strong>SUBSCRIBE OUR NEWSLETTER</strong></h3>
+                <div class="mb-3 d-flex">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email">
+                    <button>SEND</button>
+                </div>
+
+            </div>
             <ul class="row text-center row-cols-md-2 text-md-start row-cols-xl-4">
                 <li class="d-flex flex-column align-items-center mb-4 align-items-md-start">
                     <img src="../assets/logo.png" alt="logo">
@@ -17,6 +25,7 @@ export default {
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-google-plus-g"></i>
                         <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
                     </div>
                 </li>
                 <li class=" mb-5">
@@ -101,11 +110,42 @@ export default {
 @use '../styles/partials/variables' as *;
 
 footer {
-    padding: 50px 0 0 0;
+    padding: 150px 0 0 0;
     color: white;
     background-image: url(../assets/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 200px;
 }
 
+// sezione subscribe
+.subscribe {
+    background-image: url(../assets/counter-bg.jpg);
+    height: 100px;
+    padding: 86px 44px;
+    width: 1000px;
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 500px);
+
+
+}
+
+.form-control {
+    border-radius: 0;
+    width: 300px;
+    height: 50px;
+}
+
+.subscribe button {
+    width: 100px;
+    border: none;
+    background-color: #1c7e76;
+    color: white;
+}
+
+//  sezione list
 li {
     list-style-type: none;
 }
