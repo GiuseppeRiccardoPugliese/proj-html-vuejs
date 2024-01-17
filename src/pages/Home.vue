@@ -258,7 +258,7 @@ export default {
   </section>
 
   <!-- Food Discount -->
-  <section>
+  <section class="container">
     <OrganicFoodDiscount />
   </section>
 
