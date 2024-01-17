@@ -9,7 +9,8 @@ export default {
 <template>
     <footer>
         <div class="container">
-            <div class="subscribe d-flex justify-content-between align-items-center">
+            <div
+                class="subscribe d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
                 <h3><strong>SUBSCRIBE OUR NEWSLETTER</strong></h3>
                 <div class="mb-3 d-flex">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email">
@@ -86,7 +87,7 @@ export default {
 
 
         </div>
-        <div id="info" class="d-lg-flex align-items-lg-center">
+        <div id="info" class="d-flex align-items-center">
             <div
                 class="container d-flex align-items-center flex-column justify-content-center flex-lg-row justify-content-lg-between">
                 <div>
@@ -116,7 +117,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 // sezione subscribe
