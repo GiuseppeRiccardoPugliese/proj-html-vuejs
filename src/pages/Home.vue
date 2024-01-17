@@ -1,27 +1,36 @@
 <script>
-//Importo Testimonial
-import Testimonial from '../components/Testimonial.vue'
+//Importo Farm
+import Farm from '../components/Farm.vue'
 //Importo lo Shop
 import Shop from '../components/Shop.vue'
+//importo il testimonial
+import Testimonial from '../components/Testimonial.vue'
+
+// swiper
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+import 'swiper/css'
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
 export default {
   name: 'Home',
+
   components: {
-    Testimonial,
+    Swiper,
+    SwiperSlide,
+    Farm,
     Shop,
+    Testimonial
   },
-  data() {
+
+  setup() {
     return {
-      images: [
-        '/public/fe1.jpg',
-        '/public/fe2.jpg',
-        '/public/fe3.jpg',
-        '/public/fe1.jpg',
-        '/public/fe2.jpg',
-      ],
+      modules: [Autoplay, Pagination, Navigation]
     }
-  },
-  methods: {
+  }
+
+  /* methods: {
     loadInitialImages() {
       let contenitoreCarousel = document.getElementById("secondCarouselInner");
       this.images.forEach((element, index) => {
@@ -36,12 +45,11 @@ export default {
           `
       });
     },
-  },
-  mounted() {
+  }, */
+  /* mounted() {
     this.loadInitialImages();
-  },
+  }, */
 }
-
 </script>
 
 <template>
@@ -50,10 +58,12 @@ export default {
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img src="../assets/H3-slider3.jpg" class="d-block w-100" alt="first_img">
+          <img src="../assets/H3-slider3.jpg" class="d-block w-100" alt="first_img" />
           <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
-            <h1 class="fw-bolder ms_big-title">Eating naturally & organic is always be healthy.</h1>
+            <h1 class="fw-bolder ms_big-title">
+              Eating naturally & organic is always be healthy.
+            </h1>
             <div class="d-flex justify-content-center">
               <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">ABOUT US</a></span>
@@ -65,10 +75,12 @@ export default {
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="../assets/slider.jpg" class="d-block w-100" alt="second_img">
+          <img src="../assets/slider.jpg" class="d-block w-100" alt="second_img" />
           <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
-            <h1 class="fw-bolder ms_big-title">Eating naturally & organic is always be healthy.</h1>
+            <h1 class="fw-bolder ms_big-title">
+              Eating naturally & organic is always be healthy.
+            </h1>
             <div class="d-flex justify-content-center">
               <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">ABOUT US</a></span>
@@ -95,35 +107,38 @@ export default {
   <section class="container">
     <div class="row mx-0 my-5">
       <div class="col-6">
-        <h1 class="ms_green_text fw-bold m-0"><span class="ms_orange_text">Look what</span> consumer power has done with
-          <span class="ms_orange_text">organic food;</span> we can
-          do the same with
-          clothes.
+        <h1 class="ms_green_text fw-bold m-0">
+          <span class="ms_orange_text">Look what</span> consumer power has done
+          with <span class="ms_orange_text">organic food;</span> we can do the
+          same with clothes.
         </h1>
       </div>
       <div class="col-6 position-relative">
-        <p class="m-0">I have a need to make these sorts of connections literal sometimes, and a vehicle often helps to do
-          that. I
-          have a relationship to hosting culture.<span class="ms_orange_text"> It isn't really about it helps to do that.
-            I have a relationship
-            to hosting culture.</span>
-          <br> <br>
-          Need to make these sorts of connections literal sometimes, and a vehicle often helps to do that. I have a
-          relationship to hosting culture.
+        <p class="m-0">
+          I have a need to make these sorts of connections literal sometimes,
+          and a vehicle often helps to do that. I have a relationship to hosting
+          culture.<span class="ms_orange_text">
+            It isn't really about it helps to do that. I have a relationship to
+            hosting culture.</span>
+          <br />
+          <br />
+          Need to make these sorts of connections literal sometimes, and a
+          vehicle often helps to do that. I have a relationship to hosting
+          culture.
         </p>
         <div class="col-12 position-absolute text-end" id="oscillating-image">
-          <img src="../assets/fe-shap1-1.png" alt="">
+          <img src="../assets/fe-shap1-1.png" alt="" />
         </div>
       </div>
       <!-- Carousel -->
       <div class="col-12 my-4">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item d-flex justify-content-between" id="secondCarouselInner">
-              <!-- Img dinamica -->
+              Img dinamica
             </div>
           </div>
-          <!-- Controlli del carosello -->
+          Controlli del carosello
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -134,19 +149,46 @@ export default {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
+        </div> -->
+        <swiper :slidesPerView="4" :spaceBetween="30" :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false
+        }" :pagination="{
+  clickable: true
+}" :modules="modules" class="mySwiper">
+          <swiper-slide class="d-flex justify-content-center align-items-center">
+            <img src="../../public/fe1.jpg" alt="" />
+          </swiper-slide>
+          <swiper-slide class="d-flex justify-content-center align-items-center">
+            <img src="../../public/fe2.jpg" alt="" />
+          </swiper-slide>
+          <swiper-slide class="d-flex justify-content-center align-items-center">
+            <img src="../../public/fe3.jpg" alt="" />
+          </swiper-slide>
+          <swiper-slide class="d-flex justify-content-center align-items-center">
+            <img src="../../public/fe1.jpg" alt="" />
+          </swiper-slide>
+          <swiper-slide class="d-flex justify-content-center align-items-center">
+            <img src="../../public/fe2.jpg" alt="" />
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
-  </section>
-
-  <!-- Testimonials Slider -->
-  <section class="bg-black">
-    <Testimonial />
   </section>
 
   <!-- Shop -->
   <section>
     <Shop />
+  </section>
+
+  <!-- Testimonial -->
+  <section>
+    <Testimonial/>
+  </section>
+
+  <!-- Farm Slider -->
+  <section>
+    <Farm />
   </section>
 </template>
 

@@ -6,18 +6,18 @@
 @import '@fontsource-variable/montserrat';
 
 body {
-    font-family: 'Montserrat Variable', sans-serif;
-    overflow-x: hidden;
+  font-family: 'Montserrat Variable', sans-serif;
+  overflow-x: hidden;
 }
 
 *::selection {
-    color: #ef9303;
-    background: #00000013;
+  color: #ef9303;
+  background: #00000013;
 }
 
 //General styles
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }

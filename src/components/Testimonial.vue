@@ -1,73 +1,51 @@
 <script>
-/* // Import Swiper Vue.js components
+//swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
-// Import Swiper styles
 import 'swiper/css'
 
-import 'swiper/css/pagination'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
-import './style.css'
-
-// import required modules
-import { Pagination } from 'swiper/modules' */
 export default {
   name: 'Testimonial',
-  /* components: {
+  components: {
     Swiper,
     SwiperSlide
-  }, */
-  data() {
-    return {
-      testimonials: [
-        { longText: 'Testo lungo 1', shortText: 'Breve 1' },
-        { longText: 'Testo lungo 2', shortText: 'Breve 2' }
-        // Aggiunte di altre diapositive se servono
-      ]
-    }
   },
-  /* setup() {
+
+  setup() {
     return {
-      modules: [Pagination]
+      modules: [Autoplay, Pagination, Navigation]
     }
-  } */
+  }
 }
 </script>
 
 <template>
-  <!-- <div>
-        <div class="carousel-container">
-            <div class="carousel-inner" :style="{ transform: 'translateX(' + translateValue + 'px)' }">
-                <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-slide">
-                    <div class="slide-content">
-                        <h2>{{ testimonial.longText }}</h2>
-                        <p>{{ testimonial.shortText }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button @click="prevSlide" class="carousel-control-prev" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-        </button>
-        <button @click="nextSlide" class="carousel-control-next" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-        </button>
-    </div>  -->
-  <!-- <swiper
-    :slidesPerView="3"
+  <swiper
+    :slidesPerView="1"
     :spaceBetween="30"
+    :loop="true"
     :pagination="{
       clickable: true
     }"
+    :navigation="true"
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-  </swiper> -->
+    <swiper-slide>
+      <div>
+        <p>
+          “Dessert pudding dessert jelly beans cupcake sweet caramels
+          gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweets
+          muffine pudding tart bear claw sugar plum croissant.”. We started as a
+          small legal consultancy. We have proved our competence and had many
+          satisfied clients.
+        </p>
+      </div>
+    </swiper-slide>
+    <swiper-slide></swiper-slide>
+  </swiper>
 </template>
 
 <style lang="scss" scoped>
