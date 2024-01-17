@@ -25,16 +25,17 @@ export default {
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
-    :loop="true"
-    :pagination="{
-      clickable: true
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false
     }"
+    :loop="true"
     :navigation="true"
     :modules="modules"
     class="mySwiper my-5 container"
   >
     <swiper-slide>
-      <div class="bg_img d-flex flex-column justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <i class="fa-solid fa-quote-left quote_icon"></i>
         <p class="text-center size_p">
           “Dessert pudding dessert jelly beans cupcake sweet caramels
@@ -48,7 +49,9 @@ export default {
       </div>
     </swiper-slide>
     <swiper-slide>
-      <div class="bg_img d-flex flex-column justify-content-center align-items-center">
+      <div
+        class="bg_img d-flex flex-column justify-content-center align-items-center"
+      >
         <i class="fa-solid fa-quote-left quote_icon"></i>
         <p class="text-center size_p">
           “Dessert pudding dessert jelly beans cupcake sweet caramels
@@ -69,20 +72,22 @@ export default {
 
 .size_p {
   font-size: 20px;
+  color: $sus-black;
+  font-weight: 600;
 }
 
-.quote_icon{
-    font-size: 70px;
-    color: $green;
+.quote_icon {
+  font-size: 70px;
+  color: $green;
 }
 
-.bg_img{
-    background-image: url(../assets/testi-icon.png);
-    background-repeat: no-repeat;
-    background-position: right;
+.bg_img {
+  background-image: url(../assets/testi-icon.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.color_orange{
+.color_orange {
   color: #ef9303;
 }
 </style>

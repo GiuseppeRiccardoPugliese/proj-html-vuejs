@@ -163,12 +163,10 @@ export default {
             <span class="visually-hidden">Next</span>
           </button>
         </div> -->
-        <swiper :slidesPerView="4" :spaceBetween="30" :autoplay="{
+        <swiper :slidesPerView="4" :spaceBetween="30" :loop="true" :autoplay="{
           delay: 2500,
           disableOnInteraction: false
-        }" :pagination="{
-  clickable: true
-}" :modules="modules" class="mySwiper">
+        }" :navigation="true" :modules="modules" class="mySwiper">
           <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
