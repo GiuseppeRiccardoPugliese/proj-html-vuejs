@@ -3,6 +3,8 @@
 import Farm from '../components/Farm.vue'
 //Importo lo Shop
 import Shop from '../components/Shop.vue'
+//importo il testimonial
+import Testimonial from '../components/Testimonial.vue'
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -14,23 +16,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 export default {
   name: 'Home',
 
-  data() {
-    return {
-      images: [
-        '../public/fe1.jpg',
-        '../public/fe2.jpg',
-        '../public/fe3.jpg',
-        '../public/fe1.jpg',
-        '../public/fe2.jpg'
-      ]
-    }
-  },
-
   components: {
     Swiper,
     SwiperSlide,
     Farm,
-    Shop
+    Shop,
+    Testimonial
   },
 
   setup() {
@@ -240,6 +231,11 @@ export default {
   <!-- Shop -->
   <section>
     <Shop />
+  </section>
+
+  <!-- Testimonial -->
+  <section>
+    <Testimonial/>
   </section>
 
   <!-- Farm Slider -->
