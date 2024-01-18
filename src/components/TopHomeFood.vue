@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="container text-center">
+    <div class="container text-center mb-5">
         <div class="title d-flex flex-column justify-content-center">
             <div class="orange"><strong>Running week top selling</strong></div>
             <h2><strong>TOP</strong>

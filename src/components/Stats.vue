@@ -56,7 +56,7 @@ export default {
     <div class="d-flex align-items-center justify-content-center">
       <div class="text-center p-3">
         <h1 class="s_orange">{{ years }}+</h1>
-        <h5 class="text-white">Years of Experienced</h5>
+        <h5>Years of Experienced</h5>
 
       </div>
       <div>
@@ -67,7 +67,7 @@ export default {
     <div class="d-flex align-items-center justify-content-center">
       <div class="text-center p-3">
         <h1 class="s_orange">{{ count }}+</h1>
-        <h5 class="text-white">Everyday Online Delivery</h5>
+        <h5>Everyday Online Delivery</h5>
       </div>
 
       <div>
@@ -78,7 +78,7 @@ export default {
     <div class="d-flex align-items-center justify-content-center">
       <div class="text-center p-3">
         <h1 class="s_orange">{{ client }}K</h1>
-        <h5 class="text-white">Client Satyisfaction</h5>
+        <h5>Client Satyisfaction</h5>
       </div>
 
       <div>
@@ -88,7 +88,7 @@ export default {
 
     <div class="text-center">
       <h1 class="s_orange">{{ award }}+</h1>
-      <h5 class="text-white">Award Winning</h5>
+      <h5>Award Winning</h5>
     </div>
   </div>
 </template>
