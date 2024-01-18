@@ -51,30 +51,43 @@ export default {
 </script>
 
 <template>
-  <div class="statistiche container d-flex justify-content-center align-items-center my-5">
-    <div class="d-flex justify-content-center align-items-center flex-column mx-4">
-      <h1 class="s_orange">{{ years }} +</h1>
-      <h5>Years of Experienced</h5>
+  <div
+    class="statistiche container d-flex justify-content-between align-items-center row-cols-2 row-cols-lg-4 flex-wrap my-5">
+    <div class="d-flex align-items-center">
+      <div class="text-center p-3">
+        <h1 class="s_orange">{{ years }}+</h1>
+        <h5>Years of Experienced</h5>
+
+      </div>
+      <div>
+        <img src="../assets/counter-shap1.png" alt="">
+      </div>
     </div>
-    <div>
-      <img src="../assets/counter-shap1.png" alt="">
+
+    <div class="d-flex align-items-center">
+      <div class="text-center p-3">
+        <h1 class="s_orange">{{ count }}+</h1>
+        <h5>Everyday Online Delivery</h5>
+      </div>
+
+      <div>
+        <img src="../assets/counter-shap1.png" alt="">
+      </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center flex-column mx-4">
-      <h1 class="s_orange">{{ count }} +</h1>
-      <h5>Everyday Online Delivery</h5>
+
+    <div class="d-flex align-items-center">
+      <div class="text-center p-3">
+        <h1 class="s_orange">{{ client }}K</h1>
+        <h5>Client Satyisfaction</h5>
+      </div>
+
+      <div>
+        <img src="../assets/counter-shap1.png" alt="">
+      </div>
     </div>
-    <div>
-      <img src="../assets/counter-shap1.png" alt="">
-    </div>
-    <div class="d-flex justify-content-center align-items-center flex-column mx-4">
-      <h1 class="s_orange">{{ client }} K</h1>
-      <h5>Client Satyisfaction</h5>
-    </div>
-    <div>
-      <img src="../assets/counter-shap1.png" alt="">
-    </div>
-    <div class="d-flex justify-content-center align-items-center flex-column mx-4">
-      <h1 class="s_orange">{{ award }} +</h1>
+
+    <div class="text-center">
+      <h1 class="s_orange">{{ award }}+</h1>
       <h5>Award Winning</h5>
     </div>
   </div>
