@@ -80,8 +80,8 @@ export default {
 .scroll-top-arrow.show {
   display: block;
   opacity: 1;
-  padding: 5px 15px;
-  background-color: aquamarine;
+  padding: 0px 12px;
+  background-color: orange;
   border-radius: 5px;
   z-index: 1000;
 }
