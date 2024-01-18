@@ -20,7 +20,7 @@ export default {
         } else {
           clearInterval(interval);
         }
-      }, 10);
+      }, 20);
 
       const intervalYears = setInterval(() => {
         if (this.years < 29) {
@@ -28,7 +28,7 @@ export default {
         } else {
           clearInterval(intervalYears);
         }
-      }, 10);
+      }, 200);
 
       const intervalClient = setInterval(() => {
         if (this.client < 20) {
@@ -36,14 +36,14 @@ export default {
         } else {
           clearInterval(intervalClient);
         }
-      }, 10);
+      }, 285);
       const intervalAward = setInterval(() => {
-        if (this.award < 20) {
+        if (this.award < 30) {
           this.award++;
         } else {
           clearInterval(intervalAward);
         }
-      }, 10);
+      }, 195);
     }
   }
 
@@ -53,10 +53,10 @@ export default {
 <template>
   <div
     class="statistiche container d-flex justify-content-between align-items-center row-cols-2 row-cols-lg-4 flex-wrap my-5">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center">
       <div class="text-center p-3">
         <h1 class="s_orange">{{ years }}+</h1>
-        <h5>Years of Experienced</h5>
+        <h5 class="text-white">Years of Experienced</h5>
 
       </div>
       <div>
@@ -64,10 +64,10 @@ export default {
       </div>
     </div>
 
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center">
       <div class="text-center p-3">
         <h1 class="s_orange">{{ count }}+</h1>
-        <h5>Everyday Online Delivery</h5>
+        <h5 class="text-white">Everyday Online Delivery</h5>
       </div>
 
       <div>
@@ -75,10 +75,10 @@ export default {
       </div>
     </div>
 
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center">
       <div class="text-center p-3">
         <h1 class="s_orange">{{ client }}K</h1>
-        <h5>Client Satyisfaction</h5>
+        <h5 class="text-white">Client Satyisfaction</h5>
       </div>
 
       <div>
@@ -88,7 +88,7 @@ export default {
 
     <div class="text-center">
       <h1 class="s_orange">{{ award }}+</h1>
-      <h5>Award Winning</h5>
+      <h5 class="text-white">Award Winning</h5>
     </div>
   </div>
 </template>
