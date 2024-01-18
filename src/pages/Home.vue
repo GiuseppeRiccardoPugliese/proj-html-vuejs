@@ -61,7 +61,7 @@ export default {
             alt="first_img"
           />
           <div
-            class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
+            class="carousel-caption d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
           >
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
@@ -88,7 +88,7 @@ export default {
             alt="second_img"
           />
           <div
-            class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
+            class="carousel-caption d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
           >
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
