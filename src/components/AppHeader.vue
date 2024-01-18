@@ -124,9 +124,9 @@ export default {
 
 
       </div>
-      <div id="shop" class=" d-none d-lg-flex align-items-lg-center justify-content-lg-between me-3">
+      <div id="shop" class=" d-none d-lg-flex align-items-lg-center me-3 justify-content-end">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <div id="cart">
+        <div id="cart" class="ms-2 me-4">
           <i class="fa-solid fa-cart-shopping"></i>
           <div id="number">0</div>
 
@@ -319,9 +319,18 @@ nav .btn {
   color: #ef9e05;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu {
+  border-radius: 0;
+  bottom: -230px;
+  transition: all 0.5s;
   display: block;
+  opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
   border: none;
+  bottom: -181px;
 
 }
 
