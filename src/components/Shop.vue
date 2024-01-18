@@ -68,33 +68,33 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container pt-4">
     <div class="row">
       <!-- Text -->
       <div class="col-12 text-center py-3">
         <h5 class="fw-bold ms_orange-text">Trending Online Store</h5>
-        <h3 class="fw-bold text-white">
+        <h1 class="fw-bold text-white">
           GOGRIN ALL
-          <span class="ms_orange-text ms_big-font">ORGANIC</span> FOOD
-        </h3>
+          <span class="ms_orange-text">ORGANIC</span> FOOD
+        </h1>
       </div>
       <!-- Shop Menu -->
       <div class="col-12 text-center d-flex justify-content-center py-3">
         <ul class="list-unstyled d-flex">
           <li class="px-2">
-            <a class="text-white text-decoration-none" href="#">All Product</a>
+            <a class="text-decoration-none" href="#">All Product</a>
           </li>
           <li class="px-2">
-            <a class="text-white text-decoration-none" href="#">Apple</a>
+            <a class="text-decoration-none" href="#">Apple</a>
           </li>
           <li class="px-2">
-            <a class="text-white text-decoration-none" href="#">Food</a>
+            <a class="text-decoration-none" href="#">Food</a>
           </li>
           <li class="px-2">
-            <a class="text-white text-decoration-none" href="#">Orange</a>
+            <a class="text-decoration-none" href="#">Orange</a>
           </li>
           <li class="px-2">
-            <a class="text-white text-decoration-none" href="#">Vegetable</a>
+            <a class="text-decoration-none" href="#">Vegetable</a>
           </li>
         </ul>
       </div>
@@ -113,7 +113,7 @@ export default {
         <div class="d-flex justify-content-center">
           <div class="position-relative" style="width: 150px">
             <img :src="item.imgFruit" alt="" />
-            <div v-if="item.textSale" class="card_sale">
+            <div v-if="item.textSale" class="card_sale rounded">
               <span>{{ item.textSale }}</span>
             </div>
           </div>
@@ -147,12 +147,17 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 
-  .ms_orange-text {
-    color: $orange;
+  ul li a{
+    color: #fff;
+    transition: color 0.2s linear 0s;
   }
 
-  .ms_big-font {
-    font-size: 1.75rem;
+  ul li a:hover{
+    color: #ef9303;
+  }
+
+  .ms_orange-text {
+    color: $orange;
   }
 
   img:hover {
@@ -220,6 +225,7 @@ export default {
     font-size: 12px;
     margin: 10px;
     color: #fff;
+    font-weight: bold;
   }
 
   @media screen and (max-width: 768px) {
