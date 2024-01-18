@@ -22,17 +22,23 @@ export default {
 </script>
 
 <template>
-  <swiper
-    :slidesPerView="4"
-    :spaceBetween="30"
-    :loop="true"
-    :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false
-    }"
-    :modules="modules"
-    class="mySwiper my-5 pb-5 responsive_slider"
-  >
+  <swiper :slidesPerView="4" :spaceBetween="30" :loop="true" :autoplay="{
+    delay: 2500,
+    disableOnInteraction: false
+  }" :modules="modules" :breakpoints="{
+  '300': {
+    slidesPerView: 1,
+    spaceBetween: 0
+  },
+  '800': {
+    slidesPerView: 3,
+    spaceBetween: 10
+  },
+  '1200': {
+    slidesPerView: 4,
+    spaceBetween: 0
+  }
+}" class="mySwiper my-5 pb-5 responsive_slider">
     <swiper-slide class="d-flex justify-content-center align-items-center">
       <img src="../assets/brand1.png" alt="" />
     </swiper-slide>
@@ -53,6 +59,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
-
-
 </style>
