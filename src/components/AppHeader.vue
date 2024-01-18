@@ -143,9 +143,9 @@ export default {
 
       </div>
       <div id="shop" class=" d-none d-lg-flex align-items-lg-center me-3 justify-content-end">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         <div id="cart" class="ms-2 me-4">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <div id="number">0</div>
 
         </div>
