@@ -6,22 +6,16 @@ export default {
       showIcons: true,
       fruitsShop: [
         {
-          imgFruit: '../../public/s1-150x150.jpg',
-          name: 'Organic Juice',
-          priceDiscount: '$20',
-          price: '$15'
-        },
-        {
-          imgFruit: '../../public/s2-150x150.jpg',
-          name: 'Fress Cobies',
-          priceDiscount: '$18',
-          price: '$17'
+          imgFruit: '../../public/s7-150x150.jpg',
+          name: 'Naga pepper',
+          price: '$21'
         },
         {
           imgFruit: '../../public/s4-150x150.jpg',
           name: 'Fresh Blueberries',
           priceDiscount: '$19',
-          price: '$14'
+          price: '$14',
+          textSale: 'SALE!'
         },
         {
           imgFruit: '../../public/s5-150x150.jpg',
@@ -29,9 +23,18 @@ export default {
           price: '$18'
         },
         {
-          imgFruit: '../../public/s7-150x150.jpg',
-          name: 'Naga pepper',
-          price: '$21'
+          imgFruit: '../../public/s2-150x150.jpg',
+          name: 'Fress Cobies',
+          priceDiscount: '$18',
+          price: '$17',
+          textSale: 'SALE!'
+        },
+        {
+          imgFruit: '../../public/s1-150x150.jpg',
+          name: 'Organic Juice',
+          priceDiscount: '$20',
+          price: '$15',
+          textSale: 'SALE!'
         },
         {
           imgFruit: '../../public/s8-150x150.jpg',
@@ -42,7 +45,8 @@ export default {
           imgFruit: '../../public/s9-150x150.jpg',
           name: 'Red Gajor',
           priceDiscount: '$29',
-          price: '$26'
+          price: '$26',
+          textSale: 'SALE!'
         },
         {
           imgFruit: '../../public/s10-150x150.jpg',
@@ -106,7 +110,15 @@ export default {
     <!-- Shop Items -->
     <div class="d-flex justify-content-center flex-wrap" style="width: 100%">
       <div class="text-center card_fruit" v-for="item in fruitsShop">
-        <img :src="item.imgFruit" alt="" />
+        <div class="d-flex justify-content-center">
+          <div class="position-relative" style="width: 150px">
+            <img :src="item.imgFruit" alt="" />
+            <div v-if="item.textSale" class="card_sale">
+              <span>{{ item.textSale }}</span>
+            </div>
+          </div>
+        </div>
+
         <h6 class="mt-2 text-white">{{ item.name }}</h6>
         <span class="ms_orange-text text-decoration-line-through opacity-50">{{
           item.priceDiscount
@@ -195,6 +207,19 @@ export default {
   .card_fruit {
     width: 25%;
     margin-top: 20px;
+  }
+
+  .card_sale {
+    background-color: #ef9303;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+  }
+
+  .card_sale span {
+    font-size: 12px;
+    margin: 10px;
+    color: #fff;
   }
 
   @media screen and (max-width: 768px) {
