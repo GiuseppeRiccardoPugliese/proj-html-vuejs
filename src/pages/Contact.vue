@@ -15,7 +15,7 @@ export default {
   <section>
     <div class="jumbo d-flex justify-content-center align-items-center flex-column">
       <div>
-        <h2>About</h2>
+        <h2>Contact</h2>
       </div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
