@@ -40,7 +40,7 @@ export default {
 
     <nav class="d-flex justify-content-between align-items-center container">
       <div id="dropdpwns" class="d-flex align-items-center">
-        <img src="../assets/logo.png" alt="">
+        <a href="/"><img src="../assets/logo.png" alt=""></a>
         <div class="d-flex d-none d-lg-flex">
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"

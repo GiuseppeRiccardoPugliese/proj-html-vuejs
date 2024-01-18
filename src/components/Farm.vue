@@ -54,11 +54,5 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-@media screen and (max-width: 768px) {
-  
-}
 
-@media screen and (max-width: 576px) {
-  
-}
 </style>
