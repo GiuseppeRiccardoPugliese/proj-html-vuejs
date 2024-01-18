@@ -36,7 +36,11 @@ export default {
     OrganicFoodDiscount,
     TopHomeFood
   },
-
+  data() {
+    return {
+      isHovered: false,
+    }
+  },
   setup() {
     return {
       modules: [Autoplay, Pagination, Navigation]
@@ -48,82 +52,48 @@ export default {
 <template>
   <!-- Slider after header -->
   <section>
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img
-            src="../assets/H3-slider3.jpg"
-            class="d-block w-100"
-            alt="first_img"
-          />
-          <div
-            class="carousel-caption d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
-          >
+          <img src="../assets/H3-slider3.jpg" class="d-block w-100" alt="first_img" />
+          <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
               Eating naturally & organic is always be healthy.
             </h1>
             <div class="d-flex justify-content-center">
-              <div
-                class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">ABOUT US</a></span>
               </div>
-              <div
-                class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">OUR HISTORY</a></span>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img
-            src="../assets/slider.jpg"
-            class="d-block w-100"
-            alt="second_img"
-          />
-          <div
-            class="carousel-caption d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
-          >
+          <img src="../assets/slider.jpg" class="d-block w-100" alt="second_img" />
+          <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
               Eating naturally & organic is always be healthy.
             </h1>
             <div class="d-flex justify-content-center">
-              <div
-                class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">ABOUT US</a></span>
               </div>
-              <div
-                class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-              >
+              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
                 <span><a href="#">OUR HISTORY</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -146,8 +116,7 @@ export default {
           and a vehicle often helps to do that. I have a relationship to hosting
           culture.<span class="ms_orange_text">
             It isn't really about it helps to do that. I have a relationship to
-            hosting culture.</span
-          >
+            hosting culture.</span>
           <br />
           <br />
           Need to make these sorts of connections literal sometimes, and a
@@ -160,41 +129,39 @@ export default {
       </div>
       <!-- Carousel -->
       <div class="col-12 my-4">
-        <swiper
-          :slidesPerView="4"
-          :spaceBetween="30"
-          :loop="true"
-          :autoplay="{
-            delay: 2500,
-            disableOnInteraction: false
-          }"
-          :navigation="true"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+        <swiper @mouseover="isHovered = true" @mouseleave="isHovered = false" :navigation="isHovered ? true : false"
+          :style="{
+            '--swiper-navigation-color': 'orange'
+          }" :loop="true" :autoplay="{
+  delay: 2500,
+  disableOnInteraction: false
+}" :modules="modules" :breakpoints="{
+  '300': {
+    slidesPerView: 1,
+    spaceBetween: 0
+  },
+  '800': {
+    slidesPerView: 3,
+    spaceBetween: 10
+  },
+  '1200': {
+    slidesPerView: 4,
+    spaceBetween: 0
+  }
+}" class="mySwiper">
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe2.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe3.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide
-            class="d-flex justify-content-center align-items-center"
-          >
+          <swiper-slide class="d-flex justify-content-center align-items-center">
             <img src="../../public/fe2.jpg" alt="" />
           </swiper-slide>
         </swiper>
@@ -232,6 +199,7 @@ export default {
     <OrganicFoodDiscount />
   </section>
 
+  <!-- GOGRIN LATEST NEWS FEED -->
   <section>
     <div class="container my-5">
       <div class="title d-flex flex-column justify-content-center text-center">
@@ -267,9 +235,7 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none transition_text"
-            >READ MORE...</a
-          >
+          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
@@ -295,9 +261,7 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none transition_text"
-            >READ MORE...</a
-          >
+          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
@@ -323,9 +287,7 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none transition_text"
-            >READ MORE...</a
-          >
+          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
         </div>
       </div>
     </div>

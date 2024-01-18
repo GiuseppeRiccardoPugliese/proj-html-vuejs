@@ -8,23 +8,15 @@ export default {
   <footer>
     <div class="container">
       <div
-        class="subscribe d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center"
-      >
+        class="subscribe d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
         <h3><strong>SUBSCRIBE OUR NEWSLETTER</strong></h3>
         <div class="mb-3 d-flex">
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Your email"
-          />
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email" />
           <button>SEND</button>
         </div>
       </div>
       <ul class="row text-center row-cols-md-2 text-md-start row-cols-xl-4">
-        <li
-          class="d-flex flex-column align-items-center mb-4 align-items-md-start"
-        >
+        <li class="d-flex flex-column align-items-center mb-4 align-items-md-start">
           <img src="../assets/logo.png" alt="logo" />
           <p>
             War should never be entered upon until every agency of peace has
@@ -46,27 +38,25 @@ export default {
           <div class="mb-3"><a href="#">Our Team Member</a></div>
           <div class="mb-3"><a href="#">Our Latest News Feed</a></div>
         </li>
-        <li
-          class="d-flex flex-column align-items-center mb-5 align-items-md-start"
-        >
+        <li class="d-flex flex-column align-items-center mb-5 align-items-md-start">
           <h2>Our Latest Blog.</h2>
 
           <div class="mb-3 d-md-flex">
-            <img src="../assets/blo1-70x70.jpg" alt="" class="me-2 mb-2" />
+            <img src="../assets/blo1-70x70.jpg" alt="" class="me-2 mb-2 object-fit-cover" />
             <div>
               <a href="#">
                 Where I live, I am surrounded by fresh, organic food, so I eat
                 really well. </a>
-                <br/>December 17, 2022
+              <br />December 17, 2022
             </div>
           </div>
           <div class="mb-3 d-md-flex">
-            <img src="../assets/blo2-70x70.jpg" alt="" class="me-2" />
+            <img src="../assets/blo2-70x70.jpg" alt="" class="me-2  object-fit-cover" />
             <div>
-                <a href="#">
-              Where I live, I am surrounded by fresh, organic food, so I eat
-              really well. </a>
-              <br/>December 17, 2022
+              <a href="#">
+                Where I live, I am surrounded by fresh, organic food, so I eat
+                really well. </a>
+              <br />December 17, 2022
             </div>
           </div>
         </li>
@@ -98,8 +88,7 @@ export default {
     </div>
     <div id="info" class="d-flex align-items-center">
       <div
-        class="container d-flex align-items-center flex-column justify-content-center flex-lg-row justify-content-lg-between"
-      >
+        class="container d-flex align-items-center flex-column justify-content-center flex-lg-row justify-content-lg-between">
         <div>
           <div class="d-flex align-items-center me-4">
             <div>Copyright © gogrin all rights reserved.</div>
