@@ -111,8 +111,14 @@ export default {
     <div class="d-flex justify-content-center flex-wrap" style="width: 100%">
       <div class="text-center card_fruit" v-for="item in fruitsShop">
         <div class="d-flex justify-content-center">
-          <div class="position-relative" style="width: 150px">
+          <div id="relative" class="position-relative" style="width: 150px">
             <img :src="item.imgFruit" alt="" />
+            <div class="icons">
+              <i class=" me-3 fa-solid fa-heart"></i>
+              <i class=" me-3 fa-solid fa-cart-shopping"></i>
+              <i class=" me-3 fa-solid fa-eye"></i>
+
+            </div>
             <div v-if="item.textSale" class="card_sale rounded">
               <span>{{ item.textSale }}</span>
             </div>
@@ -128,9 +134,7 @@ export default {
     </div>
 
     <div class="w-100 d-flex justify-content-center">
-      <div
-        class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
-      >
+      <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
         <span><a href="#">ALL PRODUCTS</a></span>
       </div>
     </div>
@@ -147,12 +151,12 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 
-  ul li a{
+  ul li a {
     color: #fff;
     transition: color 0.2s linear 0s;
   }
 
-  ul li a:hover{
+  ul li a:hover {
     color: #ef9303;
   }
 
@@ -228,11 +232,49 @@ export default {
     font-weight: bold;
   }
 
+  #relative {
+    position: relative;
+  }
+
+  #relative:hover .icons {
+    opacity: 1;
+    bottom: 10px;
+  }
+
+  .icons {
+    position: absolute;
+    left: calc(50% - 56px);
+    width: 112px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.5s;
+    bottom: 0;
+    padding: 2px;
+
+
+  }
+
+  .fa-solid {
+    padding: 3px;
+    border-radius: 25px;
+    border: 1px solid rgb(205, 201, 201);
+  }
+
+  .fa-solid:hover {
+    background-color: #ef9e05;
+    color: white;
+  }
+
+
+
   @media screen and (max-width: 768px) {
     .card_fruit {
       width: 50%;
     }
   }
+
   @media screen and (max-width: 576px) {
     .card_fruit {
       width: 100%;
