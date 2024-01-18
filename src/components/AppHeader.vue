@@ -27,9 +27,9 @@ export default {
             <div>8.30AM-8.30PM</div>
           </div>
           <div id="social" class="d-flex justify-content-between align-items-center">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -316,6 +316,10 @@ export default {
 
 #social {
   width: 80px;
+}
+
+#social i:hover{
+  color: #ef9303;
 }
 
 .router {
