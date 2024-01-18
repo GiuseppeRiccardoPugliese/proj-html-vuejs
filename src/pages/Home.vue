@@ -245,7 +245,7 @@ export default {
       <div id="row" class="d-flex flex-wrap">
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
-            <img src="../assets/blo1-390x250.jpg" alt="" style="width: 100%;"/>
+            <img src="../assets/blo1-390x250.jpg" alt="" style="width: 100%" />
           </div>
           <div class="my-3">
             <span>
@@ -267,11 +267,13 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
+          <a href="#" class="ms_green_text text-decoration-none transition_text"
+            >READ MORE...</a
+          >
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
-            <img src="../assets/blo2-390x250.jpg" alt="" style="width: 100%;"/>
+            <img src="../assets/blo2-390x250.jpg" alt="" style="width: 100%" />
           </div>
           <div class="my-3">
             <span>
@@ -285,18 +287,21 @@ export default {
           </div>
           <div>
             <h6 class="fw-bold ms_green_text transition_text">
-              What we get at home is 100% organic food. We are also 90% vegetarian.
+              What we get at home is 100% organic food. We are also 90%
+              vegetarian.
             </h6>
             <p class="span_light">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
+          <a href="#" class="ms_green_text text-decoration-none transition_text"
+            >READ MORE...</a
+          >
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
-            <img src="../assets/blo3-390x250.jpg" alt="" style="width: 100%;"/>
+            <img src="../assets/blo3-390x250.jpg" alt="" style="width: 100%" />
           </div>
           <div class="my-3">
             <span>
@@ -310,14 +315,17 @@ export default {
           </div>
           <div>
             <h6 class="fw-bold ms_green_text transition_text">
-              If we as a society are willing to have a preference for organic food farmer
+              If we as a society are willing to have a preference for organic
+              food farmer
             </h6>
             <p class="span_light">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
+          <a href="#" class="ms_green_text text-decoration-none transition_text"
+            >READ MORE...</a
+          >
         </div>
       </div>
     </div>
@@ -425,11 +433,11 @@ export default {
   color: #00000090;
 }
 
-.transition_text{
+.transition_text {
   transition: color 0.2s linear 0s;
 }
 
-.transition_text:hover{
+.transition_text:hover {
   color: #ef9303;
   cursor: pointer;
 }
