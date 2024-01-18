@@ -33,6 +33,7 @@ export default {
         // Reset Nav
         navBar.style.position = "static";
         navBar.style.backgroundColor = "transparent";
+        navBar.style.opacity = "1";
       }
     }
   },
@@ -352,7 +353,7 @@ export default {
 
 //Transizione nav
 .navbar-transition {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 // sezione info
