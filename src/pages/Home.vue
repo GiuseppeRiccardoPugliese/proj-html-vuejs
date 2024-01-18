@@ -258,7 +258,7 @@ export default {
             <span class="span_light mx-2">17 Dec 2022</span>
           </div>
           <div>
-            <h6 class="fw-bold ms_green_text">
+            <h6 class="fw-bold ms_green_text transition_text">
               Where I live, I am surrounded by fresh, organic food, so I eat
               really well.
             </h6>
@@ -267,7 +267,7 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none">READ MORE...</a>
+          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
@@ -284,7 +284,7 @@ export default {
             <span class="span_light mx-2">16 Dec 2022</span>
           </div>
           <div>
-            <h6 class="fw-bold ms_green_text">
+            <h6 class="fw-bold ms_green_text transition_text">
               What we get at home is 100% organic food. We are also 90% vegetarian.
             </h6>
             <p class="span_light">
@@ -292,7 +292,7 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none">READ MORE...</a>
+          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
           <div>
@@ -309,7 +309,7 @@ export default {
             <span class="span_light mx-2">15 Dec 2022</span>
           </div>
           <div>
-            <h6 class="fw-bold ms_green_text">
+            <h6 class="fw-bold ms_green_text transition_text">
               If we as a society are willing to have a preference for organic food farmer
             </h6>
             <p class="span_light">
@@ -317,7 +317,7 @@ export default {
               sint asperiores blanditiis corrupti similique eaque ex quo
             </p>
           </div>
-          <a href="#" class="ms_green_text text-decoration-none">READ MORE...</a>
+          <a href="#" class="ms_green_text text-decoration-none transition_text">READ MORE...</a>
         </div>
       </div>
     </div>
@@ -423,5 +423,14 @@ export default {
 
 .span_light {
   color: #00000090;
+}
+
+.transition_text{
+  transition: color 0.2s linear 0s;
+}
+
+.transition_text:hover{
+  color: #ef9303;
+  cursor: pointer;
 }
 </style>
