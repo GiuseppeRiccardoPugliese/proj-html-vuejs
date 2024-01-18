@@ -1,23 +1,31 @@
 <script>
-
-
 export default {
     name: 'Discount',
-
+    data() {
+        return {
+            discount: [
+                {
+                    src: "/public/offer-img01.jpg",
+                    title: "Fresh gurden tomato combo offer... $37",
+                    grosso: "SHOP NOW"
+                },
+                {
+                    src: "/public/offer-img02.jpg",
+                    title: "Some ogranic healty fruits combo offer... $49",
+                    grosso: "SHOP NOW"
+                },
+            ]
+        }
+    }
 }
 </script>
 
 <template>
     <div id="discount" class=" d-flex flex-column align-items-center flex-xl-row justify-content-xl-between">
-        <div class="img mb-4">
-            <img src="../assets/offer-img01.jpg" alt="">
-            <h2 class="offers fw-semibold">Fresh gurden tomato combo offer... $37</h2>
-            <div class="shop"><strong>SHOP NOW</strong></div>
-        </div>
-        <div class="img mb-4">
-            <img src="../assets/offer-img02.jpg" alt="">
-            <h2 class="offers fw-semibold">Some ogranic healty fruits combo offer... $49</h2>
-            <div class="shop"><strong>SHOP NOW</strong></div>
+        <div class="img mb-4" v-for="el in discount">
+            <img :src="el.src" alt="">
+            <h2 class="offers fw-semibold">{{ el.title }}</h2>
+            <div class="shop"><strong>{{ el.grosso }}</strong></div>
         </div>
     </div>
 </template>
