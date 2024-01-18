@@ -119,7 +119,7 @@ export default {
       <div
         class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
       >
-        <span><a href="#">ABOUT US</a></span>
+        <span><a href="#">ALL PRODUCTS</a></span>
       </div>
     </div>
   </div>
@@ -171,7 +171,7 @@ export default {
 
   //Btn setup
   .my_orange-button {
-    width: 140px;
+    width: 150px;
     background-color: #ef9303;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
