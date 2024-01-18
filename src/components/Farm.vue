@@ -22,18 +22,10 @@ export default {
 </script>
 
 <template>
-
-  <swiper
-    :slidesPerView="4"
-    :spaceBetween="30"
-    :loop="true"
-    :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false
-    }"
-    :modules="modules"
-    class="mySwiper my-5"
-  >
+  <swiper :slidesPerView="4" :spaceBetween="30" :loop="true" :autoplay="{
+    delay: 2500,
+    disableOnInteraction: false
+  }" :modules="modules" class="mySwiper my-5 pb-5">
     <swiper-slide class="d-flex justify-content-center align-items-center">
       <img src="../assets/brand1.png" alt="" />
     </swiper-slide>
