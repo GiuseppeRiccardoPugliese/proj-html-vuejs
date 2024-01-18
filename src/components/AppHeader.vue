@@ -1,8 +1,6 @@
 <script>
 export default {
   name: "AppHeader",
-
-
 };
 </script>
 
@@ -50,10 +48,14 @@ export default {
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#"> <router-link class="router"
                   :to="{ name: 'home' }">Home-1</router-link></a>
-              <a class="dropdown-item" href="#">Home-2</a>
-              <a class="dropdown-item" href="#">Home-3</a>
-              <a class="dropdown-item" href="#">Home-Landing</a>
-              <a class="dropdown-item" href="#">Home-Video</a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Home-2</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Home-3</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Home-Landing</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Home-Video</router-link></a>
             </div>
           </div>
           <div class="dropdown">
@@ -64,52 +66,68 @@ export default {
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#"> <router-link class="router"
                   :to="{ name: 'about' }">About</router-link></a>
-              <a class="dropdown-item" href="#">Team</a>
-              <a class="dropdown-item" href="#"> Pricing Table</a>
-              <a class="dropdown-item" href="#">Faq Page</a>
-              <a class="dropdown-item" href="#">Testimonial</a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Team</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">Pricing
+                  Table</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">Faq
+                  Page</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Testimonial</router-link></a>
             </div>
           </div>
           <div class="dropdown">
             <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
-              SERVICE
+              <router-link class="router" :to="{ name: 'notfound' }">SERVICE</router-link>
             </button>
           </div>
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              PORTFOLIO
+              <router-link class="router" :to="{ name: 'notfound' }">PORTFOLIO</router-link>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Portfolio-1colum</a>
-              <a class="dropdown-item" href="#">Portfolio-2colum</a>
-              <a class="dropdown-item" href="#">Portfolio-3colum</a>
-              <a class="dropdown-item" href="#">Portfolio-4colum</a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Portfolio-1colum</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Portfolio-2colum</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Portfolio-3colum</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Portfolio-4colum</router-link></a>
             </div>
           </div>
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              SHOP
+              <router-link class="router" :to="{ name: 'notfound' }">SHOP</router-link>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Shop</a>
-              <a class="dropdown-item" href="#">My account</a>
-              <a class="dropdown-item" href="#">Cart</a>
-              <a class="dropdown-item" href="#">Checkout</a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Shop</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">My
+                  account</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Cart</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router"
+                  :to="{ name: 'notfound' }">Checkout</router-link></a>
             </div>
           </div>
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-              BLOG
+              <router-link class="router" :to="{ name: 'notfound' }">BLOG</router-link>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Blog Let Sidebar</a>
-              <a class="dropdown-item" href="#">Blog Right Sidebat</a>
-              <a class="dropdown-item" href="#">Blog Right 2Column</a>
-              <a class="dropdown-item" href="#">Blog Left 2Column</a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">Blog Let
+                  Sidebar</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">Blog Right
+                  Sidebat</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">Blog Right
+                  2Column</router-link></a>
+              <a class="dropdown-item" href="#"> <router-link class="router" :to="{ name: 'notfound' }">Blog Left
+                  2Column</router-link></a>
             </div>
           </div>
           <div class="dropdown">

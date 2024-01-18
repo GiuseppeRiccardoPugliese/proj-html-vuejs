@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
 import Contact from './pages/Contact.vue';
+import NotFound from './pages/NotFound.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -22,6 +23,11 @@ const router = createRouter({
             name: 'contact',
             component: Contact
         },
+        {
+            path: '/pageNotFound',
+            name: 'notfound',
+            component: NotFound
+        }
     ]
 });
 
@@ -29,11 +35,11 @@ const router = createRouter({
 window.addEventListener('load', () => {
     // Controlla l'URL corrente
     const currentPath = window.location.pathname;
-  
+
     // Se l'URL è diverso dalla tua rotta principale, reimposta alle rotte originali
     if (currentPath !== '/') {
-      router.push('/');
+        router.push('/');
     }
 });
 
-export {router};
+export { router };
