@@ -12,7 +12,7 @@ export default {
         <div class="title d-flex flex-column justify-content-center">
             <div class="orange"><strong>Running week top selling</strong></div>
             <h2><strong>TOP</strong>
-                <div class="orange d-inline"><strong>TRENDING</strong></div><strong>ORGANIC FOOD</strong>
+                <div class="orange d-inline"><strong> TRENDING </strong></div><strong>ORGANIC FOOD</strong>
             </h2>
 
         </div>

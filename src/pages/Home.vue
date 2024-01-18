@@ -42,74 +42,88 @@ export default {
       modules: [Autoplay, Pagination, Navigation]
     }
   }
-
-  /* methods: {
-    loadInitialImages() {
-      let contenitoreCarousel = document.getElementById("secondCarouselInner");
-      this.images.forEach((element, index) => {
-
-        let cardClass = (index === 0) ? "carousel-item active" : "carousel-item";
-
-        //Riempio la mia pagina dinamicamente
-        contenitoreCarousel.innerHTML += `
-        <div class="${cardClass}">
-          <img src=${element} alt="">
-        </div>
-          `
-      });
-    },
-  }, */
-  /* mounted() {
-    this.loadInitialImages();
-  }, */
 }
 </script>
 
 <template>
   <!-- Slider after header -->
   <section>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img src="../assets/H3-slider3.jpg" class="d-block w-100" alt="first_img" />
-          <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
+          <img
+            src="../assets/H3-slider3.jpg"
+            class="d-block w-100"
+            alt="first_img"
+          />
+          <div
+            class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
+          >
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
               Eating naturally & organic is always be healthy.
             </h1>
             <div class="d-flex justify-content-center">
-              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+              <div
+                class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
+              >
                 <span><a href="#">ABOUT US</a></span>
               </div>
-              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+              <div
+                class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
+              >
                 <span><a href="#">OUR HISTORY</a></span>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="../assets/slider.jpg" class="d-block w-100" alt="second_img" />
-          <div class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0">
+          <img
+            src="../assets/slider.jpg"
+            class="d-block w-100"
+            alt="second_img"
+          />
+          <div
+            class="carousel-caption d-none d-md-block top-50 start-50 end-0 bottom-0 left-0 translate-middle p-0"
+          >
             <h4 class="fw-bold">Gogrin ogranic food store</h4>
             <h1 class="fw-bolder ms_big-title">
               Eating naturally & organic is always be healthy.
             </h1>
             <div class="d-flex justify-content-center">
-              <div class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+              <div
+                class="my_orange-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
+              >
                 <span><a href="#">ABOUT US</a></span>
               </div>
-              <div class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2">
+              <div
+                class="my_green-button d-flex align-items-center justify-content-center p-3 mt-4 mx-2"
+              >
                 <span><a href="#">OUR HISTORY</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -132,7 +146,8 @@ export default {
           and a vehicle often helps to do that. I have a relationship to hosting
           culture.<span class="ms_orange_text">
             It isn't really about it helps to do that. I have a relationship to
-            hosting culture.</span>
+            hosting culture.</span
+          >
           <br />
           <br />
           Need to make these sorts of connections literal sometimes, and a
@@ -145,41 +160,41 @@ export default {
       </div>
       <!-- Carousel -->
       <div class="col-12 my-4">
-        <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item d-flex justify-content-between" id="secondCarouselInner">
-              Img dinamica
-            </div>
-          </div>
-          Controlli del carosello
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
-        <swiper :slidesPerView="4" :spaceBetween="30" :loop="true" :autoplay="{
-          delay: 2500,
-          disableOnInteraction: false
-        }" :navigation="true" :modules="modules" class="mySwiper">
-          <swiper-slide class="d-flex justify-content-center align-items-center">
+        <swiper
+          :slidesPerView="4"
+          :spaceBetween="30"
+          :loop="true"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false
+          }"
+          :navigation="true"
+          :modules="modules"
+          class="mySwiper"
+        >
+          <swiper-slide
+            class="d-flex justify-content-center align-items-center"
+          >
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide class="d-flex justify-content-center align-items-center">
+          <swiper-slide
+            class="d-flex justify-content-center align-items-center"
+          >
             <img src="../../public/fe2.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide class="d-flex justify-content-center align-items-center">
+          <swiper-slide
+            class="d-flex justify-content-center align-items-center"
+          >
             <img src="../../public/fe3.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide class="d-flex justify-content-center align-items-center">
+          <swiper-slide
+            class="d-flex justify-content-center align-items-center"
+          >
             <img src="../../public/fe1.jpg" alt="" />
           </swiper-slide>
-          <swiper-slide class="d-flex justify-content-center align-items-center">
+          <swiper-slide
+            class="d-flex justify-content-center align-items-center"
+          >
             <img src="../../public/fe2.jpg" alt="" />
           </swiper-slide>
         </swiper>
@@ -215,6 +230,97 @@ export default {
   <!-- Food Discount -->
   <section class="container">
     <OrganicFoodDiscount />
+  </section>
+
+  <section>
+    <div class="container my-5">
+      <div class="title d-flex flex-column justify-content-center text-center">
+        <div class="orange"><strong>The news whatwe have</strong></div>
+        <h2>
+          <strong>GOGRIN LATEST</strong>
+          <div class="orange d-inline"><strong> NEWS </strong></div>
+          <strong>FEED</strong>
+        </h2>
+      </div>
+      <div id="row" class="d-flex flex-wrap">
+        <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
+          <div>
+            <img src="../assets/blo1-390x250.jpg" alt="" style="width: 100%;"/>
+          </div>
+          <div class="my-3">
+            <span>
+              <i class="fa-solid fa-user orange"></i>
+            </span>
+            <span class="span_light mx-2">Gogrin</span>
+            <span>
+              <i class="fa-regular fa-clock orange"></i>
+            </span>
+            <span class="span_light mx-2">17 Dec 2022</span>
+          </div>
+          <div>
+            <h6 class="fw-bold ms_green_text">
+              Where I live, I am surrounded by fresh, organic food, so I eat
+              really well.
+            </h6>
+            <p class="span_light">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+              sint asperiores blanditiis corrupti similique eaque ex quo
+            </p>
+          </div>
+          <a href="#" class="ms_green_text text-decoration-none">READ MORE...</a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
+          <div>
+            <img src="../assets/blo2-390x250.jpg" alt="" style="width: 100%;"/>
+          </div>
+          <div class="my-3">
+            <span>
+              <i class="fa-solid fa-user orange"></i>
+            </span>
+            <span class="span_light mx-2">Gogrin</span>
+            <span>
+              <i class="fa-regular fa-clock orange"></i>
+            </span>
+            <span class="span_light mx-2">16 Dec 2022</span>
+          </div>
+          <div>
+            <h6 class="fw-bold ms_green_text">
+              What we get at home is 100% organic food. We are also 90% vegetarian.
+            </h6>
+            <p class="span_light">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+              sint asperiores blanditiis corrupti similique eaque ex quo
+            </p>
+          </div>
+          <a href="#" class="ms_green_text text-decoration-none">READ MORE...</a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 px-3 mt-2">
+          <div>
+            <img src="../assets/blo3-390x250.jpg" alt="" style="width: 100%;"/>
+          </div>
+          <div class="my-3">
+            <span>
+              <i class="fa-solid fa-user orange"></i>
+            </span>
+            <span class="span_light mx-2">Gogrin</span>
+            <span>
+              <i class="fa-regular fa-clock orange"></i>
+            </span>
+            <span class="span_light mx-2">15 Dec 2022</span>
+          </div>
+          <div>
+            <h6 class="fw-bold ms_green_text">
+              If we as a society are willing to have a preference for organic food farmer
+            </h6>
+            <p class="span_light">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+              sint asperiores blanditiis corrupti similique eaque ex quo
+            </p>
+          </div>
+          <a href="#" class="ms_green_text text-decoration-none">READ MORE...</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Farm Slider -->
@@ -304,15 +410,18 @@ export default {
   background-image: url(../assets/counter-bg.jpg);
 }
 
-// .carousel-control-prev-icon,
-// .carousel-control-next-icon {
-//   background-color: transparent;
-//   border: none;
+.title {
+  background-image: url(../assets/title-shap.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
 
-//   &:hover {
-//     // background-color: white;
-//     background-color: aquamarine;
-//     color: $orange;
-//   }
-// }
+.orange {
+  color: #ef9e05;
+}
+
+.span_light {
+  color: #00000090;
+}
 </style>
