@@ -1,6 +1,48 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      containerFluid: true,
+    }
+  },
+  methods: {
+    fixedNav() {
+      const infoSection = document.getElementById("info");
+      const navBar = document.querySelector("nav");
+
+      if (window.scrollY > 25) {
+        // Hide "info"
+        infoSection.style.display = 'none';
+
+        //Addo la transizione
+        navBar.classList.add('navbar-transition');
+
+        // Nav bar Style
+        navBar.style.position = "fixed";
+        navBar.style.backgroundColor = "#82639c";
+        navBar.style.opacity = "0.8";
+        navBar.style.width = "100%";
+        navBar.style.zIndex = "1000";
+        navBar.style.top = "0";
+
+      } else {
+        // Altrimenti mi ricompare la barra
+        infoSection.style.display = 'block';
+
+        // Reset Nav
+        navBar.style.position = "static";
+        navBar.style.backgroundColor = "transparent";
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.fixedNav);
+  },
+  beforeDestroy() {
+    // Memory leaks
+    window.removeEventListener('scroll', this.fixedNav);
+  },
 };
 </script>
 
@@ -36,7 +78,8 @@ export default {
     </div>
     <!-- sezione nav -->
 
-    <nav class="d-flex justify-content-between align-items-center container">
+    <nav :class="{ 'container': !containerFluid, 'container-fluid': containerFluid }"
+      class="d-flex justify-content-between align-items-center">
       <div id="dropdpwns" class="d-flex align-items-center">
         <a href="/"><img src="../assets/logo.png" alt=""></a>
         <div class="d-flex d-none d-lg-flex">
@@ -307,6 +350,11 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 
+//Transizione nav
+.navbar-transition {
+  transition: all 0.3s ease;
+}
+
 // sezione info
 #info {
   height: 50px;
@@ -318,7 +366,7 @@ export default {
   width: 80px;
 }
 
-#social i:hover{
+#social i:hover {
   color: #ef9303;
 }
 
