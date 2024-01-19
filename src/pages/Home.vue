@@ -131,7 +131,7 @@ export default {
       <div class="col-12 my-4">
         <swiper @mouseover="isHovered = true" @mouseleave="isHovered = false" :navigation="isHovered ? true : false"
           :style="{
-            '--swiper-navigation-color': '#000'
+            '--swiper-navigation-color': 'orange'
           }" :loop="true" :autoplay="{
   delay: 2500,
   disableOnInteraction: false
