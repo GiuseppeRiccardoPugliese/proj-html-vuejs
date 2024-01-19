@@ -318,7 +318,7 @@ export default {
   width: 80px;
 }
 
-#social i:hover{
+#social i:hover {
   color: #ef9303;
 }
 
