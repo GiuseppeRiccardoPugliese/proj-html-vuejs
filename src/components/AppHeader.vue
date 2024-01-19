@@ -20,7 +20,7 @@ export default {
 
         // Nav bar Style
         navBar.style.position = "fixed";
-        navBar.style.backgroundColor = "#82639c";
+        navBar.style.backgroundColor = "#ef9d05c1";
         navBar.style.opacity = "0.8";
         navBar.style.width = "100%";
         navBar.style.zIndex = "1000";
@@ -406,7 +406,7 @@ nav .btn {
 }
 
 nav a:hover {
-  color: #ef9e05;
+  color: #ef9d05c1;
 }
 
 a {
